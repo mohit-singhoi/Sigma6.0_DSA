@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Cost {
     public static void main(String[] args) {
-        Scanner sc= new Scanner(System.in);
+        try(Scanner sc= new Scanner(System.in)){
         System.out.print("Enter the price of pencil :");
         int p1= sc.nextInt();
         System.out.print("Enter the quantity of pencil :");
@@ -31,5 +31,5 @@ public class Cost {
         System.out.println("GST is :"+ (finalcost - totalCost));
 
         System.out.println("Final Cost is :"+finalcost);
-    }
+    }}
 }
