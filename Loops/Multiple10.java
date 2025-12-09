@@ -5,12 +5,12 @@ public class Multiple10 {
         
         Scanner sc = new Scanner(System.in);
         do { 
-            System.out.print("Enter Number");
+            System.out.print("Enter Number :");
             int num= sc.nextInt();
             if(num%10==0){
                 continue;
             }
-            System.out.println("Number was :"+n);
+            System.out.println("Number was :"+num);
         } while (true);
     }
     
