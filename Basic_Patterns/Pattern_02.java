@@ -4,7 +4,7 @@
 // * *
 // *
 
-package Patterns;
+package Basic_Patterns;
 
 public class Pattern_02 {
     public static void main(String[] args) {
