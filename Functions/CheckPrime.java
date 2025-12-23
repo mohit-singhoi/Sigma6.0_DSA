@@ -3,8 +3,14 @@ import java.util.Scanner;
 
 public class CheckPrime {
   
+    //Only for n>=2
     public static boolean primeCheck(int n){
         // boolean isprime=true;
+
+        //corrner case
+        if(n==2){
+            return true;
+        }
         for(int i=2;i<n;i++){
             if(n%i==0){
             // isprime=false;
