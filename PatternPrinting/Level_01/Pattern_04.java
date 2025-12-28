@@ -4,7 +4,7 @@
 // DEF
 // GHIJ
 
-package Basic_Patterns;
+package PatternPrinting.Level_01;
 
 public class Pattern_04 {
 

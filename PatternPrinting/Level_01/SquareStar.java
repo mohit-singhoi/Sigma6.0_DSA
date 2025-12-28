@@ -1,6 +1,6 @@
 // Simple Star Pattern 
 
-package Basic_Patterns;
+package PatternPrinting.Level_01;
 import java.util.Scanner;
 public class SquareStar {
     public static void main(String[] args) {

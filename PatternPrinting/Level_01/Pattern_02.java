@@ -4,7 +4,7 @@
 // * *
 // *
 
-package Basic_Patterns;
+package PatternPrinting.Level_01;
 
 public class Pattern_02 {
     public static void main(String[] args) {
