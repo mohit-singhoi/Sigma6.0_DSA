@@ -1,3 +1,11 @@
+//WAP to print this pattern
+
+//     * 
+//    ** 
+//   ***
+//  ****
+// *****
+
 package PatternPrinting.Level_02;
 import java.util.Scanner;
 
