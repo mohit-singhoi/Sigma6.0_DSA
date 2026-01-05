@@ -19,6 +19,7 @@ public class ArrayCreation {
 
         String fruits[] = { "apple", "mango", "Guava" }; // String type data
 
+        // Enter Data in Array : Input the data
         System.out.print("Enter the size of Array : ");
         int n = sc.nextInt();
         System.out.println("Enter marks ");
@@ -27,8 +28,9 @@ public class ArrayCreation {
         }
 
 
-         System.out.println("\n\nMarks ");
-        for (int i=1;i<=n;i++) {
+        //Output or Print the data 
+        System.out.println("\n\nMarks ");
+        for (int i = 1; i <= n; i++) {
             System.out.print(marks[i] + " ");
         }
         System.out.println("\nNumbers");
