@@ -20,9 +20,20 @@ public class LinearSearch {
         return -1;
     }
 
+    public static int seachmenu(String menu_item[], String item){
+        for(int i=0;i<menu_item.length;i++){
+            if(menu_item[i]==item){
+                return i;
+            }
+        }
+        return -1;
+    }
+
     public static void main(String[] args) {
         int num[] = { 89, 78, 98, 69, 76 };
+        String menu_item[] ={"Samosa", "Chole Bhutre", "Dahi", "Juice","Momoes"};
         int key = 69;
+        String item="Dahi";
         // linearsearch(marks, key);
 
         int index = linearSearch(num, key);
@@ -30,6 +41,13 @@ public class LinearSearch {
             System.out.println("Key not found");
         else
             System.out.println("Element at index :" +index);
+
+        int index1= seachmenu(menu_item, item);
+        if(index==-1){
+            System.out.println("item not found");
+        }
+        else
+            System.out.println("item found at index :"+index1);
     }
 
 }
