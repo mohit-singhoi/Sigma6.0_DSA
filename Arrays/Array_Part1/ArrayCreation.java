@@ -27,6 +27,14 @@ public class ArrayCreation {
             marks[i] = sc.nextInt();
         }
 
+        //Update the value in Array
+        int updateIndex, newValue;
+        System.out.print("Enter the index to update : ");
+        updateIndex = sc.nextInt();
+        System.out.print("Enter the new value : ");
+        newValue = sc.nextInt();
+        marks[updateIndex] = newValue; // Update Data in Array
+
 
         //Output or Print the data 
         System.out.println("\n\nMarks ");
