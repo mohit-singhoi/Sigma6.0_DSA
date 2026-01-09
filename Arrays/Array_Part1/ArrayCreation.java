@@ -36,19 +36,32 @@ public class ArrayCreation {
         marks[updateIndex] = newValue; // Update Data in Array
 
 
+
         //Output or Print the data 
-        System.out.println("\n\nMarks ");
+
+        //Length of Array 
+        System.out.println("\n\nLength of Array is  :"+ marks.length);
+        int sum=0;
+        float per=0;
+        System.out.println("\nMarks ");
         for (int i = 1; i <= n; i++) {
+           
             System.out.print(marks[i] + " ");
+             sum=marks[i]+sum;
         }
+
+        per=sum/n;
+        System.out.println("Total Obtained Marks : " +sum);
+        System.out.println("\nPercentage : "+per+"%");
         System.out.println("\nNumbers");
         for (int i : numbers) {
             System.out.print(i + " ");
         }
-        System.out.println("\nFruits");
+        System.out.println("\n\nFruits");
         for (String i : fruits) {
             System.out.print(i + " ");
         }
+
 
     }
 
