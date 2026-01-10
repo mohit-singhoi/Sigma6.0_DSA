@@ -6,11 +6,13 @@ public class BinarySearch {
 
         while(start<=end){
             int mid= start+(end-start)/2;
+
+            //Comparison
             if(num[mid]==target) return mid;
 
-            else if(mid<target) start=mid+1;
+            else if(mid<target) start=mid+1;  // right side of the mid 
             
-            else end = mid-1;
+            else end = mid-1;  // Left Side of the mid
         }
         return -1;
 
