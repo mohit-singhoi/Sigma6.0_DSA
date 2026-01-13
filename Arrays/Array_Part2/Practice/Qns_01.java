@@ -2,7 +2,7 @@
 
 package Array_Part2.Practice;
 
-public class Qns_02 {
+public class Qns_01 {
 
     public static void printSubArray(int arr[]) {
 

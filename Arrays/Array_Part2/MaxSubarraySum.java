@@ -1,8 +1,10 @@
+//WAP to print the MAX Subarray Sum using Prefix sum using kadanes algorithm
+
 //WAP to print the MAX Subarray Sum using Prefix sum method
 
 package Array_Part2;
 
-public class PrefixSubarraySum {
+public class MaxSubarraySum {
     public static void prefixmaxSubArray(int arr[]){
         int currsum =0;
         int maxsum = Integer.MIN_VALUE;
@@ -30,9 +32,25 @@ public class PrefixSubarraySum {
         System.out.println("Max Sum = " +maxsum);
 
     }
+    
+    public static void kadanes(int arr[]){
+        int ms = Integer.MIN_VALUE;
+        int cs = 0;
+
+        for(int i =0;i<arr.length;i++){
+            cs = cs+arr[i];
+            if(cs<0){
+                cs=0;
+            }
+            ms=Math.max(cs, ms);
+        }
+
+        System.out.println("Our max subarray sum is : " +ms);
+
+    }
 
     public static void main(String[] args) {
-        int arr[] ={1,-2,6,-1,3};
-        prefixmaxSubArray(arr);
+        int arr[] ={-2,-3,4,-1,-2,1,5,-3};
+        kadanes(arr);
     }
 }
