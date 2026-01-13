@@ -1,50 +1,36 @@
-//WAP to print the sub array & sum of  each sub array and print them
+// WAP to print the second largest element in the given array
 
 package Practice;
 
 public class Qns_02 {
+    public static int secondLargestElement(int arr[]){
+        int largest =arr[0];
+        int seclargest =arr[0];
 
-    public static void printSubArray(int arr[]) {
-
-        int maxSum = Integer.MIN_VALUE;
-        int minSum = Integer.MAX_VALUE;
-
-        for (int i = 0; i < arr.length; i++) {
-            for (int j = i; j < arr.length; j++) {
-
-                int sum = 0; // reset for each subarray
-                System.out.print("Subarray (");
-
-                for (int k = i; k <= j; k++) {
-                    System.out.print(arr[k]);
-                    sum += arr[k];
-
-                    if (k < j) {
-                        System.out.print(", ");
-                    }
-                }
-
-                System.out.println(") = " + sum);
-
-                // update max and min sum
-                if (sum > maxSum) {
-                    maxSum = sum;
-                }
-                if (sum < minSum) {
-                    minSum = sum;
-                }
+        for(int i=0;i<arr.length;i++){
+            if(arr[i]>largest){
+                largest = arr[i];
             }
-            System.out.println();
+        }
+       // return largest;
+
+        for(int i=0;i<arr.length;i++){
+            if(arr[i]<largest && arr[i]>seclargest){
+                seclargest=arr[i];
+            }
         }
 
-        int ts = arr.length * (arr.length + 1) / 2;
-        System.out.println("Total number of Subarray is : " + ts);
-        System.out.println("Maximum Subarray Sum : " + maxSum);
-        System.out.println("Minimum Subarray Sum : " + minSum);
+        return seclargest;
     }
 
     public static void main(String[] args) {
-        int arr[] = { 2, 4, 6, 8, 10 };
-        printSubArray(arr);
+        int arr[] = {4,8,98,12,7,6,3,465,2,433,31};
+
+        int result=secondLargestElement(arr);
+       // System.out.println("Largest Element is : " +result);
+        System.out.println("Second Largest Element is : " +result);
+
     }
+    
+    
 }
