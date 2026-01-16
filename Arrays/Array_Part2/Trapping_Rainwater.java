@@ -1,9 +1,13 @@
+//trapping rainwater Problem
+// Given n non-negative integers representing an elevation map where the width of each bar is 1,
+// compute how much water it can trap after raining.
+
 package Array_Part2;
 
 public class Trapping_Rainwater {
-    public static int trappedRainwater(int height[]) {
+    public static int trappedRainwater(int height[]) { // Time complexity : O(n)
 
-        // 1. calculate left max boundry
+        // 1. calculate left max boundry --array
 
         int leftMax[] = new int[height.length];
         leftMax[0] = height[0];
@@ -11,7 +15,7 @@ public class Trapping_Rainwater {
             leftMax[i] = Math.max(height[i], leftMax[i - 1]);
         }
 
-        // 2. calculate right max boundry
+        // 2. calculate right max boundry --array
 
         int rightMax[] = new int[height.length];
         rightMax[height.length - 1] = height[height.length - 1];
