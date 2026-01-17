@@ -28,10 +28,10 @@ public class Trapping_Rainwater {
 
         for (int i = 0; i < height.length; i++) {
             // waterLevel = min(leftmax bound , rightmax bound)
-            int wateraLevel = Math.min(leftMax[i], rightMax[i]);
+            int waterLevel = Math.min(leftMax[i], rightMax[i]);
 
             // trapped ater = waterlevel - height[i];
-            trappedRainwater += wateraLevel - height[i];
+            trappedRainwater += waterLevel - height[i];
         }
 
         return trappedRainwater;
