@@ -6,18 +6,20 @@ package Array_Part2.Practice;
 
 public class Qns_02 {
     public static boolean twiceElement(int nums[]) {
-        int count = 1;
+        // int count = 1;
         for (int i = 0; i < nums.length; i++) {
             for (int j = i + 1; j < nums.length; j++) {
                 if (nums[i] == nums[j]) {
-                    count++;
+                    // count++;
+                    return true;
                 }
             }
         }
-        if (count >= 2)
-            return true;
-        else
-            return false;
+        return false;
+        // if (count >= 2)
+        //     return true;
+        // else
+        //     return false;
 
     }
 
