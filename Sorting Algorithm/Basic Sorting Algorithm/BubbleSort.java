@@ -28,8 +28,8 @@ public class BubbleSort {
         }
     }
 
-    public static void main(String[] args) {
-        int arr[] = { 5, 4, 1, 3, 2 };
+    public static void main(String[] args) { // Time complexity is : O(n^2)  Best Case : O(n)
+        int arr[] = { 5, 4, 1, 3, 2 }; 
         ////1.Print Array in Ascending Order
         // System.out.print("Sorted Array in Ascending Order : ");
         ////2.Print Array in Decending Order
