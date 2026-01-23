@@ -1,3 +1,6 @@
+// MergeSort.java
+// Implementation of Merge Sort algorithm in Java
+
 public class MergeSort {
 
     public static void merge(int arr[], int low, int mid, int high) {

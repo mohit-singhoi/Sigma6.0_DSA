@@ -33,7 +33,7 @@ public class BubbleSort {
         ////1.Print Array in Ascending Order
         // System.out.print("Sorted Array in Ascending Order : ");
         ////2.Print Array in Decending Order
-        System.out.print("Sorted Array in Ascending Order : ");
+        System.out.print("Sorted Array in Descending Order : ");
         bubbleSort(arr);
     }
 

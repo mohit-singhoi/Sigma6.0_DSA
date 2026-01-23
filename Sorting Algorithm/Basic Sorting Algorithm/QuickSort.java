@@ -1,3 +1,7 @@
+// QuickSort.java
+// Implementation of Quick Sort algorithm in Java
+
+
 public class QuickSort {
     public static int partition(int arr[], int low, int high) {
         int pivot = arr[high];

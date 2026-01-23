@@ -1,3 +1,6 @@
+// InsertionSort.java
+// Implementation of Insertion Sort algorithm in Java
+
 public class InsertionSort {
     public static void insertionSort(int arr[]){
         int n= arr.length;

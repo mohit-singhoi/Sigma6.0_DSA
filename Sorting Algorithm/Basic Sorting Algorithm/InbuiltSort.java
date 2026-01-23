@@ -1,4 +1,6 @@
+// InbuiltSort.java
 //WAP to sort an array using inbuilt function
+
 import java.util.*;
 
 public class InbuiltSort {
