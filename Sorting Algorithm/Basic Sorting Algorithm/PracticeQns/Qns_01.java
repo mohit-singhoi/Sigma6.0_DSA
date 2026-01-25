@@ -1,4 +1,4 @@
-package PracticeQns;
+// Bubble Sort Algorithm in Java
 
 public class Qns_01 {
     public static void bubbleSort(int arr[]) {
