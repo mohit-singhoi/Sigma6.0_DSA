@@ -8,7 +8,7 @@ public class SearchMatrix {
         int rows = matrix.length;
         int cols = matrix[0].length;
 
-        // // 1st way
+        // // 1st way  Complexity : O(m+n)
         // int row = 0;
         // int col = cols - 1;
 
@@ -24,7 +24,7 @@ public class SearchMatrix {
 
         // return false;
 
-        // 2nd way
+        // 2nd way Complexity : O(m+n)
         int row = rows - 1;
         int col = 0;
         while (col < cols && row >= 0) {
