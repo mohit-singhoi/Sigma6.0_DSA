@@ -4,7 +4,8 @@ public class Str {
     public static void main(String[] args) {
         // Creating a string
         String str1 = "Hello, World!";
-        String str2 = new String("Java Programming");
+        // String str2 = new String("Java Programming");
+        String str2 = "Java Programming";
 
         // String concatenation
         String str3 = str1 + " " + str2;

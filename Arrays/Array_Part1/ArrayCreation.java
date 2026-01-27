@@ -61,7 +61,7 @@ public class ArrayCreation {
         for (String i : fruits) {
             System.out.print(i + " ");
         }
-
+sc.close();
 
     }
 
