@@ -1,5 +1,6 @@
 public class Pallindrome {
     public static void main(String[] args) {
+        
         String str = "madam";
         String reversedStr = "";
 
