@@ -1,4 +1,4 @@
-public class LargestStr {
+public class LargestStr { // O(maxnumlen*N(compare every element))
     
     public static void main(String[] args) {
         String names[] ={"Ankit Raj","Dipak","Mohit", "Amit","Abhishek","Raja","Ankit"};

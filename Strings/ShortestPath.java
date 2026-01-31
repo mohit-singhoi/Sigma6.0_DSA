@@ -26,8 +26,6 @@ public class ShortestPath {
             }
         }
 
-
-
         return (float) Math.sqrt(x*x + y*y);
     }
 
