@@ -1,5 +1,5 @@
 public class StringCompression {
-    public static String compress(String str) {
+    public static String compress(String str) { // O(n)
         String newStr = "";
 
         for (int i = 0; i < str.length(); i++) {
