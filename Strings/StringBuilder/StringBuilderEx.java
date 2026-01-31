@@ -10,6 +10,7 @@ public class StringBuilderEx {
 
         // O(26)
         System.out.println("Strings are : " +sb);
+        System.out.println("Length of String is : " +sb.length());
     }
     
 }
