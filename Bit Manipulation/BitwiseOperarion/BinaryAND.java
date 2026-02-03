@@ -1,3 +1,4 @@
+package BitwiseOperarion;
 public class BinaryAND {
     public static void main(String[] args) {
         int a = 5;  // Binary: 0101
