@@ -1,3 +1,5 @@
+// WAP to check given no. is odd or even using least significant digit
+
 import java.util.Scanner;
 public class CheckOddEven {
     public static void oddOrEven(int n){
