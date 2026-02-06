@@ -6,6 +6,7 @@ public class ClassObject {
         System.out.println("Updated Pen color : " + p.color);
 
         p.setTip(5);
+        p.tip = 6;
         System.out.println("Pen Thickness : "+p.tip);
 
         // Student Class
