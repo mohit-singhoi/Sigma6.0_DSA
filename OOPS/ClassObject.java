@@ -10,6 +10,9 @@ public class ClassObject {
         System.out.println("Pen Thickness : "+p.tip);
 
         // Student Class
+        Student s1 = new Student();
+        s1.name ="Mohit Kumar";
+        System.out.println("Name : " +s1.name);
         System.out.println("Percentage : "+ Student.percentage);
         Student.calcPercentage(89, 78, 91, 80,73);
         System.out.println("Updated Percentage : "+Student.percentage);
