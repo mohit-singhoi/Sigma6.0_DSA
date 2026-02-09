@@ -26,6 +26,7 @@ public class main2 {
 class Person{
     int age;
     String name;
+    float salary;
 
     void work(){
         System.out.println("Working as a person");
@@ -33,7 +34,7 @@ class Person{
 }
 
 class Employee extends Person{
-    float salary = 45000.0f;
+   float salary = 45000.0f;
     String dept = "IT";
 
     void EmpWork(){
