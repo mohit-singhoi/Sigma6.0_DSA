@@ -13,8 +13,8 @@ public class Main2 {
         Cow c = new Cow();
         c.eat();
         c.walk();
-        System.out.println("The Cow color is : " +c.color);
-        c.changeColor();
+        System.out.println("The Cow color is : " +c.color); // Brown Because you create an object then its parent class Animal constructor is automatically called then its color is Brown 
+        c.changeColor(); // After applying individual color changing function then color will change 
         System.out.println("Updated Cow color is : " +c.color);
 
        // Animal a = new Animal(); // error You can not create object of abstract class
