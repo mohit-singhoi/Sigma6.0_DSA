@@ -3,9 +3,9 @@ package Polymorphism;
 public class Main2 {
     public static void main(String[] args) {
         Calculator c = new Calculator();
-        System.out.println("Sum of Two Int Float  :"+c.sum(10,5));
-        System.out.println("Sum of Two Float Value  :"+c.sum(5.2f,9.4f));
-        System.out.println("Sum of Three Number  :"+c.sum(10,5,4));
+        System.out.println("Sum of Two Int Float  : "+c.sum(10,5));
+        System.out.println("Sum of Two Float Value  : "+c.sum(5.2f,(float)9.4));
+        System.out.println("Sum of Three Number  : "+c.sum(10,5,4));
 
         
     }
