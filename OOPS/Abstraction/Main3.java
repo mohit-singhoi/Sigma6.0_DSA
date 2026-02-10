@@ -4,6 +4,8 @@ public class Main3 {
     public static void main(String[] args) {
         SavingAcc myacc = new SavingAcc();
         // BankAccount --> SBI --> SavingAcc
+        myacc.calInterest(); // Only saving bank Interest cal is called
+        myacc.ac(); // Different fun is called but when 2-3 same fun in diff. class it overrides the fun latest fun is called.
         
     }
 }
@@ -15,6 +17,10 @@ abstract class BankAccount{
         System.out.println("Bank Account Open.");
     }
 
+    void ac(){
+        System.out.println("Hii, Customer.");
+    }
+
     abstract void calInterest();
 }
 
@@ -22,6 +28,9 @@ class SBI extends BankAccount{
 
     SBI(){
         System.out.println("Account Open in SBI Bank");
+    }
+    void ac(){
+        System.out.println("Hello, Welcome to SBI");
     }
 
     void calInterest(){
