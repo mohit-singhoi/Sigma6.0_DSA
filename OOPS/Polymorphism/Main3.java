@@ -3,8 +3,18 @@ package Polymorphism;
 
 public class Main3 {
     public static void main(String[] args) {
+
+        //1.
         Dog d = new Dog();
         d.eat();
+
+        //2.
+        Animal a = new Dog();
+        a.eat();
+
+        //3.
+        Animal a1 = new Animal();
+        a1.eat();
         
     }
     
