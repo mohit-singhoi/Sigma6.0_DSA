@@ -11,7 +11,7 @@ public class Main1 {
 }
 
 interface Animal{
-    void sound(); // by default it is an abstract method
+    void sound(); // by default method is public and an abstract method.
 }
 
 class Dog implements Animal{
