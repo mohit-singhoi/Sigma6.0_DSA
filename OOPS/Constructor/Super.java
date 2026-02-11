@@ -1,3 +1,4 @@
+package Constructor;
 public class Super {
     public static void main(String[] args) {
         Horse h = new Horse();

@@ -1,3 +1,4 @@
+package Encapsulation;
 public class AccessModifiers {
     public static void main(String[] args) {
         BankAccount bank = new BankAccount();
