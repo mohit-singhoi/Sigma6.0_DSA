@@ -1,3 +1,4 @@
+
 import java.util.Scanner;
 public class Qns_08 {
     public static void main(String[] args) {
