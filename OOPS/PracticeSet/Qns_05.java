@@ -4,6 +4,8 @@ public class Qns_05 {
         Book b1 = new Book(150);
         Book b2 = new Book(225);
 
+        System.out.println("Total Books : " + b1.count);
+        System.out.println("Total Books : " + b2.count);
         System.out.println("Total Books : " + Book.count);
     }
 }
