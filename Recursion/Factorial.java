@@ -1,3 +1,5 @@
+// Find the Factorial of a Given Number.
+
 public class Factorial {
     
     public static int fact(int n){
