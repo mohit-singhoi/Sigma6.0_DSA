@@ -1,3 +1,4 @@
+package Part1;
 // WAP to print the Fibonacci series up to n numbers
 
 public class Fibonacci {

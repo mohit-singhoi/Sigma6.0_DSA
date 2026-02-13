@@ -1,3 +1,4 @@
+package Part1;
 // Find the Factorial of a Given Number.
 
 public class Factorial {

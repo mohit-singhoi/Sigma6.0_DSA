@@ -1,3 +1,4 @@
+package Part1;
 // WAP to find the sum of first n natrural Num.
 
 public class NaturalSum {

@@ -1,3 +1,4 @@
+package Part1;
 public class PrintNumInc {
     
     public static void printNumInc(int n){
