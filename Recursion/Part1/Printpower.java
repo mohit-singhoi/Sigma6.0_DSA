@@ -8,9 +8,14 @@ public class Printpower {
             return 1;
         }
 
-        int xnm1 = printPowerOfN(x, n - 1);
-        int xn = x * xnm1;
-        return xn;
+        // //1.
+        // int xnm1 = printPowerOfN(x, n - 1);
+        // int xn = x * xnm1;
+        // return xn;
+
+
+        ////2. 
+        return x * printPowerOfN(x, n-1);
     }
 
     public static void main(String[] args) {
