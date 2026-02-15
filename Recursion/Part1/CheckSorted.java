@@ -15,7 +15,8 @@ public class CheckSorted{
 
     // Main Function
     public static void main(String[] args){
-        int arr[] = {7,9,1,2,7,3};
+       // int arr[] = {7,9,1,2,7,3};
+       int arr[] = {1,4,7,9,12,36};
         System.out.println("Array is Sorted : " +isSorted(arr, 0));
         
     }
