@@ -1,7 +1,7 @@
 // Check if a Given array is sorted or not.
 public class CheckSorted{
 
-    public static boolean isSorted(int arr[] , int i){
+    public static boolean isSorted(int arr[] , int i){ // O(n)
         if(i == arr.length-1){
             return true;
         }
@@ -14,7 +14,7 @@ public class CheckSorted{
     }
 
     // Main Function
-    public static void main(String[] args){
+    public static void main(String[] args){ 
        // int arr[] = {7,9,1,2,7,3};
        int arr[] = {1,4,7,9,12,36};
         System.out.println("Array is Sorted : " +isSorted(arr, 0));
