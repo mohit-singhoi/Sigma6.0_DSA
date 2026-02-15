@@ -6,12 +6,19 @@ public class LastOccurence {
             return -1;
         }
         int isFound = lastOccurence(arr, key, i+1);
-        if(isFound != -1){
-            return isFound;
-        }
 
-        // Check with Self
-        if(arr[i] == key){
+        //1 .
+        // if(isFound != -1 ){
+        //     return isFound;
+        // }
+
+        // // Check with Self
+        // if(arr[i] == key){
+        //     return i;
+        // }
+
+        ////2. 
+        if(isFound == -1 && arr[i] == key){
             return i;
         }
         return isFound;
