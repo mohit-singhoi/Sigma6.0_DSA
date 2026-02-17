@@ -1,11 +1,14 @@
 package PracticeSets;
 
 public class Qns_01 {
-    public static int printOptimizedSq(int x , int n){
+    public static int printOptimizedSq(int x , int n){ // O(log n)
         if(n == 0){
             return 1;
         }
-        int halfPowerSq = printOptimizedSq(x,n/2) * printOptimizedSq(x, n/2);
+       // int halfPowerSq = printOptimizedSq(x,n/2) * printOptimizedSq(x, n/2);
+
+       int halfPower = printOptimizedSq(x, n/2);
+       int halfPowerSq = halfPower * halfPower;
 
         //  If n is odd
         if(n % 2!=0){
