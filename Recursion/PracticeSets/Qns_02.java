@@ -1,6 +1,6 @@
 package PracticeSets;
 
-public class RemoveDuplicate {
+public class Qns_02 {
     public static void removeDuplicates(String Str , int idx , StringBuilder newStr , boolean map[]){
         // Base case
         if(idx == Str.length()){
