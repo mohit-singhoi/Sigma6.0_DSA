@@ -65,3 +65,8 @@ public class QuickSort {
         printArray(arr);
     }
 }
+
+// Note : 
+// In quickSort worst case occurs when the smallest or largest element is always chosen as the pivot,
+// leading to O(n^2) time complexity. This can happen, for example, if the input array is already sorted or reverse sorted. 
+// To mitigate this issue, various strategies can be employed to choose a better pivot, such as using the median of the first, middle, and last elements (median-of-three) or selecting a random pivot.
