@@ -56,6 +56,9 @@ public class MergeSort {
     
 
     // Main function
+    // TC = O(n log n) - The array is divided into two halves log n times, and each merge operation takes O(n) time.
+    // SC = O(n) - The temporary array used for merging takes O(n) space.
+    // We are going to depth first traverse the array, dividing it into halves until we reach single elements (base case). Then we will merge those single elements back together in sorted order, which is where the O(n) time complexity comes from for each merge operation. The overall time complexity of the algorithm is O(n log n) due to the recursive division and merging process.
     public static void main(String[] args) {
         int[] arr = {38, 27, 43, 3, 9, 82, 10};
         System.out.println("Original array:");
