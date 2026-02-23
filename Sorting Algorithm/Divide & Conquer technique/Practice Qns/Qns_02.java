@@ -9,7 +9,16 @@ public class Qns_02 {
             if (count == 0) {
                 candidate = num;
             }
-            count += (num == candidate) ? 1 : -1;
+
+            // //1st
+            // count += (num == candidate) ? 1 : -1;
+
+            //2nd
+            if (num == candidate) {
+                count++;
+            } else {
+                count--;
+            }
         }
 
         return candidate;
