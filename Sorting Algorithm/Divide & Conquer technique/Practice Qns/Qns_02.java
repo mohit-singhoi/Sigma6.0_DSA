@@ -27,7 +27,7 @@ public class Qns_02 {
     //Main method to test the function
     public static void main(String[] args) {
         Qns_02 solution = new Qns_02();
-        int[] nums = {2, 2, 1, 1, 1, 2, 2};
+        int[] nums = {2, 2, 1, 1, 1, 2, 2, 3};
         int result = solution.majorityElement(nums);
         System.out.println("The majority element is: " + result);
     }
