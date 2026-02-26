@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // Maximum SubArray sum using divide and conquer approach
 
 public class Qns_04 {
@@ -52,4 +53,10 @@ public class Qns_04 {
         int result = maxSubArray(arr, 0, arr.length - 1);
         System.out.println("Maximum Subarray Sum: " + result);
     }
+=======
+public class Qns_04{
+ public static void main(String[] args){
+ System.out.println("Example 4");
+}
+>>>>>>> 3ebd9febf2ac3eaf13b88cd7658228421364705c
 }
