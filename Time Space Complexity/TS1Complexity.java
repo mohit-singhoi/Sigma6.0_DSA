@@ -1,3 +1,4 @@
+// Nested loops with O(n^2) complexity
 public class TS1Complexity {
     public static void main(String[] args) {
         int n = 100; // Example input size
