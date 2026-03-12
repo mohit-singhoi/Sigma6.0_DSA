@@ -8,7 +8,7 @@ public class Factorial {
     }
 
     // Main fun
-    public static void main(String[] args) {
+    public static void main(String[] args) { // TC : O(N) , SC : O(N)
         int n=5;
         int result =fact(n);
         System.out.println("Factorial of " + n + "is : " +result);

@@ -8,7 +8,7 @@ public class SumOfN {
     }
 
     // Main
-    public static void main(String[] args) {
+    public static void main(String[] args) { // TC : o(N)  , SC : o(N)
         int n= 5;
         System.out.println("Sum of N Numbers : " +Sum(n));
     }
