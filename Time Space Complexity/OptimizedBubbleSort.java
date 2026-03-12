@@ -27,7 +27,7 @@ public class OptimizedBubbleSort {
     }
 
     // Main function to test the optimized bubble sort
-    public static void main(String[] args) {
+    public static void main(String[] args) { // TC O(n) in best case when the array is already sorted, O(n^2) in worst case and average case, SC O(1)
         int arr[] = {5, 7, 9, 1, 2, 6, 8, 2};
         optimizedBubbleSort(arr);
         System.out.print("\nSorted Array : ");
