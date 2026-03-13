@@ -15,7 +15,7 @@ public class FibonacciAnalysis {
         System.out.print("Enter the N :");
         n= sc.nextInt();
         System.out.println("Fibonacci Series ");
-        for(int i=0;i<=n;i++){
+        for(int i=0;i<n;i++){
             System.out.print(fib(i) + " ");
         }
         System.out.println("\nFibonacci of " + n + " is : " + fib(n));
