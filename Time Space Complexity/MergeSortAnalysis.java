@@ -38,10 +38,10 @@ public class MergeSortAnalysis {
     }   
 
     // Main function
-    public static void main(String[] args) {
+    public static void main(String[] args) { // Time Complexity : O(N log N) , Space Complexity : O(N)
         int arr[] = {5,4,3,2,1};
         mergeSort(arr, 0, arr.length-1);
-        System.out.println("Sorted Array : ");
+        System.out.print("Sorted Array : ");
         for(int i=0;i<arr.length;i++){
             System.out.print(arr[i] + " ");
 
