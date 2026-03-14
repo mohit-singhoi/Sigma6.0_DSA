@@ -11,7 +11,7 @@ public class Qns_01 {
     }
 
     // Main function
-    public static void main(String[] args) {
+    public static void main(String[] args) { // TC = O(N) and SC = O(1) due to iterative approach
         int[] arr = {1, 2, 3, 4, 5};
         int target = 3;
         int result = linearSearch(arr, target);
