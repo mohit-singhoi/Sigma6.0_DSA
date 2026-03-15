@@ -1,6 +1,9 @@
-// Given an integer array nums of unique elements, return all possible subsets (the power set).
-public class FindSubsets {
-    public static void findSubsets(String str, String ans , int i){
+// WAP to find all the subsets of a given set of characters using stringBuilder and backtracking.
+
+package PracticeQns;
+
+public class Qns_01 {
+    public static void findSubsets(String str, StringBuilder ans , int i){
         // base case
         if(i == str.length()){
             if(ans.length() == 0){
@@ -14,17 +17,18 @@ public class FindSubsets {
 
         // recursion
         //yes
-        findSubsets(str, ans + str.charAt(i), i+1);
+        ans.append(str.charAt(i));
+        findSubsets(str, ans, i+1);
+        ans.deleteCharAt(ans.length()-1);
         //no
         findSubsets(str, ans, i+1);
     }
-
 
     // Main Function
     public static void main(String[] args) { //TC O(2^n*n) SC O(n)
         String str = "abc";
         System.out.println("Total Subsets are : ");
-        findSubsets(str, "", 0);  
-    }  
-
+        findSubsets(str, new StringBuilder(""), 0);
+    }
+    
 }
