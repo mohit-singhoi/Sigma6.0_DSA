@@ -17,7 +17,7 @@ public class FindPermutation {
     }
 
     // Main Function
-    public static void main(String[] args) {
+    public static void main(String[] args) { //TC O(n*n!), SC O(n)
         String str = "abc";
         System.out.println("Total Permutations are : ");
         findPermutation(str, "");
