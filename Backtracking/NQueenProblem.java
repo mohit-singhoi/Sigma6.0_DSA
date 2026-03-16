@@ -58,7 +58,7 @@ public class NQueenProblem {
 
     static int count = 0;
     // main fun
-    public static void main(String[] args) {
+    public static void main(String[] args) { // TC O(N!), SC O(N^2)
         int n;
         System.out.print("Enter the number of queens: ");
         Scanner sc = new Scanner(System.in);

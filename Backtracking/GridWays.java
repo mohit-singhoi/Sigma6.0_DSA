@@ -16,7 +16,7 @@ public class GridWays {
     }
 
     // main function
-    public static void main(String[] args) {
+    public static void main(String[] args) { // TC O(2^(m+n)), SC O(m+n)
         int m = 3; // number of rows
         int n = 3; // number of columns
         System.out.println("Total ways to reach the bottom-right corner: " + gridWays(0, 0, m, n));
