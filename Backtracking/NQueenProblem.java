@@ -1,4 +1,5 @@
 // NQueens Problem: Place N queens on an N x N chessboard such that no two queens threaten each other.
+import java.util.Scanner;
 public class NQueenProblem {
 
     public static boolean isSafe(char board[][], int row, int col) {
@@ -29,6 +30,7 @@ public class NQueenProblem {
         // base
         if (row == board.length) {
             printBoard(board);
+            count++;
             return;
         }
 
@@ -47,14 +49,20 @@ public class NQueenProblem {
         for(int i=0;i<board.length;i++){
             for(int j=0;j<board.length;j++){
                 System.out.print(board[i][j] + "  ");
+                
             }
             System.out.println();
+            
         }
     }
 
+    static int count = 0;
     // main fun
     public static void main(String[] args) {
-        int n= 4;
+        int n;
+        System.out.print("Enter the number of queens: ");
+        Scanner sc = new Scanner(System.in);
+        n = sc.nextInt();   
         char board[][] = new char[n][n];
         // initialize queens
         for(int i=0;i<n;i++){
@@ -63,7 +71,9 @@ public class NQueenProblem {
             }
         }
         nQueens(board, 0);
-            
+        sc.close();
+
+        System.out.println("\nTotal solutions: " + count);
         
     }
 
