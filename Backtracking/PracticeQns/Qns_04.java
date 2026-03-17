@@ -1,5 +1,5 @@
 // WAP of Keypad Combination Problem
-public class KeypadCobinationProblem {
+public class Qns_04 {
 
     final static char[][] keypad = {
         {}, {}, {'a', 'b', 'c'}, {'d', 'e', 'f'}, {'g', 'h', 'i'},

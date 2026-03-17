@@ -1,4 +1,4 @@
-// Rat in a Maze Problem
+// WAP of Rat in a Maze Problem
 public class Qns_03 {
 
     public static boolean solveMaze(int[][] maze, int[][] solution, int x, int y) {
