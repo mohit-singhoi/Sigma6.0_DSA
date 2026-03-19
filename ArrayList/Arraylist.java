@@ -8,8 +8,8 @@ public class Arraylist {
         ArrayList<String> list2 = new ArrayList<>();
         ArrayList<Boolean> list3 = new ArrayList<>();
 
-        // 1. Add Operation
-        list1.add(1); // O(n)
+        // 1. Add Operation - O(1)
+        list1.add(1); 
         list1.add(2);
         list1.add(5);
         list1.add(1);
@@ -17,10 +17,16 @@ public class Arraylist {
 
         System.out.println(list1);
 
-        // 2. Get Operation
+        // 2. Get Operation - O(1)
         int element = list1.get(2);
         System.out.println(element);
         System.out.println("Get First Element : " +list1.getFirst());
         System.out.println(list1.getLast());
+        System.out.println(list1.get(3));
+
+
+        // 3. Delete Operation - O(1)
+        list1.remove(2);
+        System.out.println(list1);
     }
 }
