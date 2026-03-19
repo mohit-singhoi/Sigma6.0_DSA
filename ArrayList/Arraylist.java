@@ -1,3 +1,4 @@
+//Perform ArrayList Operations in Java
 import java.util.ArrayList;
 
 public class Arraylist {
@@ -25,8 +26,13 @@ public class Arraylist {
         System.out.println(list1.get(3));
 
 
-        // 3. Delete Operation - O(1)
+        // 3. Delete Operation - O(n)  it take linear time.
         list1.remove(2);
+        System.out.println(list1);
+
+
+        // 4. Set Operation - O(1)
+        list1.set(2, 100);
         System.out.println(list1);
     }
 }
