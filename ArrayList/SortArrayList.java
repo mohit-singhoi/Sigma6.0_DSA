@@ -27,6 +27,13 @@ public class SortArrayList {
             }
         }
         System.out.println("Sorted ArrayList using loop: " + list);
+
+
+        // Return in Descending order
+        Collections.sort(list, Collections.reverseOrder());
+        System.out.println("Sorted ArrayList in Descending order: " + list);
+
+        // Comparator :  Custom sorting logic
     }
     
 }
