@@ -11,11 +11,14 @@ public class WaterContainer1 {
         int rp = height.size()-1;
 
         while(lp<rp){
+
+            // calculate the water stored
             int h = Math.min(height.get(lp), height.get(rp));
             int w = rp-lp;
             int currWater = h*w;
             maxWater = Math.max(maxWater, currWater);
 
+            // move the pointer which has less height
             if(height.get(lp)<height.get(rp)){
                 lp++;
             }else{
