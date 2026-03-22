@@ -7,11 +7,13 @@ public class TwoDArrayList {
         ArrayList<ArrayList<Integer>> mainList = new ArrayList<>();
         ArrayList<Integer> list = new ArrayList<>();
 
-        list.add(1); list.add(2);
+        list.add(1); 
+        list.add(2);
         mainList.add(list);
 
         ArrayList<Integer>  list2 = new ArrayList<>();
-        list2.add(3); list2.add(4);
+        list2.add(3);
+        list2.add(4);
         mainList.add(list2);
 
 
@@ -23,9 +25,6 @@ public class TwoDArrayList {
          }
          System.out.println();
         }
-
-
-
     }
     
 }

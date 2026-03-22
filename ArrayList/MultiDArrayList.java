@@ -21,6 +21,7 @@ public class MultiDArrayList {
         mainList.add(list1);
         mainList.add(list2);
         mainList.add(list3);
+        list2.remove(3); // 2 4 6 10
 
        //  System.out.println(mainList);
 
