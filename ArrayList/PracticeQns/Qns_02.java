@@ -8,7 +8,7 @@ package PracticeQns;
 
 import java.util.*;
 
-public class LonelyNumbers {
+public class Qns_02{
 
     public static ArrayList<Integer> findLonely(ArrayList<Integer> nums) {
         ArrayList<Integer> result = new ArrayList<>();
