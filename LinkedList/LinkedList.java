@@ -67,6 +67,10 @@ public class LinkedList  {
 
     // Add at Specified idx
     public void addidx(int idx , int data){
+        if(idx == 0){
+            addFirst(data);
+            return;
+        }
         Node newNode = new Node(data);
         Node temp = head;
         int i =0;
@@ -96,7 +100,7 @@ public class LinkedList  {
         l1.printData();
         l1.addidx(2, 9);
         l1.printData();
-
-        
+        l1.addidx(0, 13);
+        l1.printData();
     }
 }
