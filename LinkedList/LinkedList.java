@@ -16,7 +16,7 @@ public class LinkedList  {
 
 
     // Methods
-    // Add element at 1st node
+    // Add element at 1st node - O(1)
     public void addFirst(int data){
         // Step 1 =  create new Node
          Node newNode = new Node(data);
@@ -32,7 +32,7 @@ public class LinkedList  {
         head = newNode;
     }
 
-    // Ad element at last node
+    // Add element at last node -O(1)
     public void addLast(int data){
         // Step 1 : Create new Node
         Node newNode = new Node(data);
@@ -49,7 +49,7 @@ public class LinkedList  {
 
     }
 
-    // print the linked list 
+    // print the linked list  - O(n)
     public void printData(){
         if(head == null){
             System.out.println("LinkedList is Empty");
@@ -63,6 +63,25 @@ public class LinkedList  {
         }
         System.out.println("null");
     }
+
+
+    // Add at Specified idx
+    public void addidx(int idx , int data){
+        Node newNode = new Node(data);
+        Node temp = head;
+        int i =0;
+        while(i<idx-1){
+            temp = temp.next;
+            i++;
+        }
+
+        // i = idx-1 ; temp->prev
+        newNode.next = temp.next;
+        temp.next = newNode;
+
+    } 
+
+
     // Main Fun
     public static void main(String[] args) {
         LinkedList l1 = new LinkedList();
@@ -74,6 +93,8 @@ public class LinkedList  {
         l1.addLast(3);
         l1.printData();
         l1.addLast(4);
+        l1.printData();
+        l1.addidx(2, 9);
         l1.printData();
 
         
