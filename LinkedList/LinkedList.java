@@ -1,8 +1,6 @@
 // Structure of LinkedList
 
-import java.util.LinkedList;
-
-public class NodeStructure {
+public class LinkedList  {
     public static class Node{
         int data;
         Node next;
@@ -60,14 +58,14 @@ public class NodeStructure {
         Node temp = head;
         while(temp != null){
 
-            System.out.println(temp.data+ "->");
+            System.out.print(temp.data+ "->");
             temp = temp.next;
         }
         System.out.println("null");
     }
     // Main Fun
     public static void main(String[] args) {
-        LinkedList<Object> l1 = new LinkedList<>();
+        LinkedList l1 = new LinkedList();
         l1.printData();
         l1.addFirst(2);
         l1.printData();
@@ -76,6 +74,7 @@ public class NodeStructure {
         l1.addLast(3);
         l1.printData();
         l1.addLast(4);
+        l1.printData();
 
         
     }
