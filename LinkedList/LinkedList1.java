@@ -72,7 +72,8 @@ public class LinkedList1 {
             prev = prev.next;
         }
 
-        int val = prev.next.data; // trail.data
+        //int val = prev.next.data; // tail.data
+        int val = tail.data;
         prev.next = null;
         size--;
         return val;
