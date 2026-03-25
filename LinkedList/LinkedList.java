@@ -109,4 +109,5 @@ public class LinkedList  {
         l1.printData();
         System.out.println("Size of a LinkedList : "+size);
     }
+
 }
