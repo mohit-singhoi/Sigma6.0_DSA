@@ -36,9 +36,23 @@ public class LinkedList1 {
 
     // removeFirst node
     public int removeFirst() {
+
+        if(size == 0){
+            System.out.println("LinkedList is Empty");
+            return Integer.MIN_VALUE;
+        }
+        else if(size == 1){
+            int val = head.data;
+            head = tail = null;
+            size--;
+            return val;
+            
+        }
         int val = head.data;
         head = head.next;
+        size--;
         return val;
+        
     }
 
     // print the linked list - O(n)
@@ -64,7 +78,9 @@ public class LinkedList1 {
         l1.addData(9);
         l1.addData(5);
         l1.printData();
+        System.out.println("Size of LL is : "+size);
         l1.removeFirst();
         l1.printData();
+        System.out.println("After Removing Size of LL is : "+size);
     }
 }
