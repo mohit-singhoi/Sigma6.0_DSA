@@ -6,6 +6,8 @@
 // end - value of the last soldier
 // Using recursion , backtracking and memoization to solve the problem
 
+// TCS PYQ 
+
 public class Qns_03 {
 
     public static void generate(int N, int R, int end, int[] arr, int index) {
