@@ -34,20 +34,53 @@ public class SearchEleIdx {
         head = newNode;
     }
 
+    public int itrSearch(int key) {
+        Node temp = head;
+        int i = 0;
+        while (temp != null) {
+            if (temp.data == key) {
+                return i;
+            }
+            temp = temp.next;
+            i++;
+        }
+
+        // Key not found
+        return -1;
+
+    }
+
+    // print the linked list - O(n)
+    public void printData() {
+        if (head == null) {
+            System.out.println("LinkedList is Empty");
+            return;
+        }
+        Node temp = head;
+        while (temp != null) {
+
+            System.out.print(temp.data + "->");
+            temp = temp.next;
+        }
+        System.out.println("null");
+    }
 
     // Main fun
     public static void main(String[] args) {
         SearchEleIdx l1 = new SearchEleIdx();
-        LinkedList l2 = new LinkedList();
+        
 
-        l2.printData();
+        l1.printData();
         l1.addData(1);
         l1.addData(8);
         l1.addData(6);
         l1.addData(2);
         l1.addData(40);
         l1.addData(2);
-        l2.printData();
-        System.out.println("Size of Linked List is : "+size);
+        l1.addData(2);
+    
+        l1.printData();
+        System.out.println(l1.itrSearch(6));
+        System.out.println("Size of Linked List is : " + size);
     }
 }
