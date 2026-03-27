@@ -16,7 +16,7 @@ public class SearchEleIdx {
     public static Node tail;
     public static int size;
 
-    // Add element in the linkedList - O(1)
+    // Add element in the in 1st Node in linkedList - O(1)
     public void addData(int data) {
 
         // Step 1 = create new Node
@@ -34,6 +34,8 @@ public class SearchEleIdx {
         head = newNode;
     }
 
+
+    // Iterative Search Search 
     public int itrSearch(int key) {
         Node temp = head;
         int i = 0;
@@ -48,6 +50,27 @@ public class SearchEleIdx {
         // Key not found
         return -1;
 
+    }
+
+    // Recursive Search
+    // helper fun
+    public int helper(Node head , int key){
+        if (head == null){
+            return -1;
+        }
+        if(head.data == key){
+            return 0;
+        }
+
+        int idx = helper(head.next, key);
+        if(idx == -1){
+            return -1;
+        }
+        return idx+1;
+    }
+
+    public int recSearch(int key){
+        return helper(head, key);
     }
 
     // print the linked list - O(n)
@@ -81,6 +104,7 @@ public class SearchEleIdx {
     
         l1.printData();
         System.out.println(l1.itrSearch(6));
+        System.out.println(l1.recSearch(8));
         System.out.println("Size of Linked List is : " + size);
     }
 }
