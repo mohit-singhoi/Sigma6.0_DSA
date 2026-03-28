@@ -89,6 +89,7 @@ public class DelNode {
 
         // Remove element 9
         n1.deleteNthFromEnd(3);
+        System.out.println("Delete 3rd Node form End");
         n1.printData();
     }
 
