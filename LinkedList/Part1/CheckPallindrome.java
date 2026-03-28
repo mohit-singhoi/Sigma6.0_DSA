@@ -89,7 +89,7 @@ public class CheckPallindrome {
         Node left = head;
         
         
-        // step3 - check  left half & right half
+        // step3 - check  left half & right half are equal
         while(right != null){
             if(left.data != right.data){
                 return false;
