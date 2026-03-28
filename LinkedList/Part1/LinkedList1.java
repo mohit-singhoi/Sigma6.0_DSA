@@ -1,3 +1,4 @@
+package Part1;
 // Apply LinkedList element remove opration.
 // RemoveFirst element
 // Remove last element 

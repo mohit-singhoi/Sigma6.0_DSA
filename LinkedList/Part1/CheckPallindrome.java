@@ -1,3 +1,4 @@
+package Part1;
 // WAP to check Linkedlist is pallindrom eor Not using Slow fast approach.
 public class CheckPallindrome {
        public static class Node{
@@ -105,9 +106,9 @@ public class CheckPallindrome {
         CheckPallindrome p1 = new CheckPallindrome();
         p1.addLast(1);
         p1.addLast(2);
-        p1.addLast(2);
+       // p1.addLast(2);
         p1.addLast(1);
-        p1.addLast(9);
+       // p1.addLast(9);
         p1.printData();
         System.out.println("Size of LinkedList is : " +size);
         System.out.print("check LL is Pallindrom ? : "+p1.checkPallindrome());

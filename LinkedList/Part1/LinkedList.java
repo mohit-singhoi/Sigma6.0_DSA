@@ -1,3 +1,4 @@
+package Part1;
 // Structure of LinkedList
 
 public class LinkedList  {

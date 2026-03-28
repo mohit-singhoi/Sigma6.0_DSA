@@ -1,3 +1,4 @@
+package Part1;
 // Find and remove nth Node from End using iterative approach.
 public class DelNode {
       public static class Node{
