@@ -60,6 +60,7 @@ public class DelNode {
         }
         if(n == sz){
             head = head.next; // remove first
+            size--;
             return;
         }
 
@@ -72,6 +73,7 @@ public class DelNode {
             i++;
         }
         prev.next = prev.next.next;
+        size--;
         return;
 
     }
@@ -86,11 +88,13 @@ public class DelNode {
         n1.addFirst(0);
         n1.addFirst(7);
         n1.printData();
+        System.out.println("Size of LL  : "+ size);
 
         // Remove element 9
         n1.deleteNthFromEnd(3);
         System.out.println("Delete 3rd Node form End");
         n1.printData();
+        System.out.println(" After deletion LL Size is : " + size);
     }
 
 }
