@@ -1,7 +1,7 @@
 //Detect a Loop/cycle in a Linked List
 package Part2;
 
-public class LoopCycle {
+public class DetectCycle {
         public static class Node{
         int data;
         Node next;
@@ -68,7 +68,7 @@ public class LoopCycle {
 
     // Main fun
     public static void main(String[] args) {
-       LoopCycle l1 = new LoopCycle();
+       DetectCycle l1 = new DetectCycle();
        head = new Node(1);
        head.next = new Node(2);
        head.next.next = new Node(3);
