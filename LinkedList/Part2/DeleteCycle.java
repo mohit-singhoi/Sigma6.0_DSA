@@ -1,4 +1,5 @@
-// Delete Cycle in Linked List
+
+// WAP of delete the cycle/loop in detecting in a LinkedList.
 
 package Part2;
 
