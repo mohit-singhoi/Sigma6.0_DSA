@@ -67,8 +67,9 @@ public class DeleteCycle {
         return false; // cycle doesn't exists
     }
 
+    // Remove Cycle in LinkedList
     public static void removeCycle() {
-        // Detect Cycle
+       
         Node slow = head;
         Node fast = head;
         boolean cycle = false;
