@@ -108,14 +108,14 @@ public class MergeSortLL {
     }
 
     // Main method to test the merge sort
-    public static void main(String[] args) {
+    public static void main(String[] args) { // O(n log n)
         MergeSortLL list = new MergeSortLL();
        
         list.addFirst(38);
         list.addFirst(27);
         list.addFirst(43);
         list.addFirst(3);
-        list.addFirst(9); // add 9 at the beginning
+       // list.addFirst(9); // add 9 at the beginning
         System.out.println("Original List: ");
         list.printData(); // Original List: [43, 38, 9, 27, 3]
 
