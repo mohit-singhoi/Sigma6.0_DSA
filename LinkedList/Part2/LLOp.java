@@ -10,6 +10,7 @@ public class LLOp {
         list.addFirst(7);
         list.addFirst(3);
         list.addLast(70);
+        list.add(2, 100); // add 100 at index 2
         
         // Print list
         //3->7->11->70
