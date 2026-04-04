@@ -1,3 +1,4 @@
+// WAP to show a LinkedList in a ZigZag form.
 package Part2;
 
 public class Zig_ZagLL {
