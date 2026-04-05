@@ -78,7 +78,6 @@ public class DoublyLL {
         System.out.println("Size of the Doubly Linked List: " + size); // Size of the Doubly Linked List: 4
         dll.removeLast();
         dll.print(); // 6<->1<->7<->null
-        System.out.println("Size of the Doubly Linked List: " + size); // Size
     }
     
 }
