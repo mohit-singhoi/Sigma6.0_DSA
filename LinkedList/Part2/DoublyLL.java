@@ -63,7 +63,24 @@ public class DoublyLL {
         return val;
     }
 
-
+    // Remove First
+    public int removeFirst(){
+        if(size == 0){
+            System.out.println("Doubly Linked List is empty");
+            return Integer.MIN_VALUE;
+        }
+        else if(size == 1){
+            int val = head.data;
+            head = tail = null;
+            size = 0;
+            return val;
+        }
+        int val = head.data;
+        head = head.next;
+        head.prev = null;
+        size--;
+        return val;
+    }
 
 
 
@@ -78,6 +95,9 @@ public class DoublyLL {
         System.out.println("Size of the Doubly Linked List: " + size); // Size of the Doubly Linked List: 4
         dll.removeLast();
         dll.print(); // 6<->1<->7<->null
+        dll.removeFirst();
+        dll.print(); // 1<->7<->null
+        System.out.println("Size of the Doubly Linked List: " + size); // Size of the Doubly Linked List: 2
     }
     
 }
