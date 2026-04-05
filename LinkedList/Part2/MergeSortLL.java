@@ -50,7 +50,7 @@ public class MergeSortLL {
         Node mergedLL = new Node(-1); // dummy node
         Node temp = mergedLL;
 
-        while (head1 != null && head2 != null) {
+        while (head1 != null && head2 != null){
             if (head1.data <= head2.data) {
                 temp.next = head1;
                 head1 = head1.next;
