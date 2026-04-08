@@ -17,6 +17,11 @@ public class StackA {
 
         // pop
         public int pop(){
+            // check if stack is empty
+            if (isEmpty()){
+                System.out.println("Stack is empty");
+                return -1;
+            }
             int top = list.get(list.size() - 1);
             list.remove(list.size() - 1);
             return top;
@@ -24,6 +29,11 @@ public class StackA {
 
         // peek
         public int peek(){
+            // check if stack is empty
+            if (isEmpty()){
+                System.out.println("Stack is empty");
+                return -1;
+            }
             return list.get(list.size() - 1);
         }
 
