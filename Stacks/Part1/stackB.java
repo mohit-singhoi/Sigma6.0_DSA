@@ -1,6 +1,5 @@
 package Part1;
 
-
 public class stackB {
     public static class Node {
         int data;
