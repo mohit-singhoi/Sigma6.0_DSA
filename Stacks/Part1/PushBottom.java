@@ -13,7 +13,7 @@ public class PushBottom {
         pushAtBottom(s, data);
         s.push(top);
     }
-    public static void main(String[] args) {
+    public static void main(String[] args) { //O(n) time complexity and O(n) space complexity
         Stack<Integer> s = new Stack<>();
         s.push(1);
         s.push(2);
