@@ -41,9 +41,11 @@ public class ReverseStack1 {
         s.push(3);
 
         printStack(s);
+        //3, 2, 1
         System.out.println("After reversing the stack:");
         reverseStack(s);
         printStack(s);
+        //1, 2, 3
     }
 
 }
