@@ -11,15 +11,19 @@ public class NextGreaterEle {
 
         for (int i = arr.length - 1; i >= 0; i--){
             int currEle = arr[i];
+            // 1. While
             while (!s.isEmpty() && currEle > arr[s.peek()]){
                 s.pop();
             }
+            // 2. If-else
             if (s.isEmpty()){
                 nge[i] = -1;
             } else {
                 int nextGreater = s.peek();
                 nge[i] = arr[nextGreater];
             }
+
+            // 3. Push
             s.push(i);
 
         }
