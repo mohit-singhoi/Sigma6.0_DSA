@@ -1,3 +1,4 @@
+// WAP to reverse the number using Stack.
 package Part1;
 
 import java.util.Stack;
