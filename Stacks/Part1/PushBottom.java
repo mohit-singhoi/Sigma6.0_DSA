@@ -1,3 +1,4 @@
+// WAP to push the element on bottom in stack.
 package Part1;
 import java.util.*;
 public class PushBottom {
