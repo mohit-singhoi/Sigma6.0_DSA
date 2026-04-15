@@ -12,10 +12,19 @@ public class Validparentheses {
                 if (stack.isEmpty()) {
                     return false;
                 }
-                char top = stack.pop();
-                if ((c == ')' && top != '(') ||
-                    (c == ']' && top != '[') ||
-                    (c == '}' && top != '{')) {
+                // 1. using if-else
+                // char top = stack.pop();
+                // if ((c == ')' && top != '(') ||
+                //     (c == ']' && top != '[') ||
+                //     (c == '}' && top != '{')) {
+                //     return false;
+                // }
+
+                if( (stack.peek() == '(' && c == ')') ||
+                    (stack.peek() == '[' && c == ']') ||
+                    (stack.peek() == '{' && c == '}')) {
+                    stack.pop();
+                } else {
                     return false;
                 }
             }
