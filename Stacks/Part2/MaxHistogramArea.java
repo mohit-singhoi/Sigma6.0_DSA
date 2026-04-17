@@ -49,6 +49,8 @@ public class MaxHistogramArea {
     // Main method to test the function
     public static void main(String[] args) {
         int heights[] = {2, 1, 5, 6, 2, 3};
+        int heights2[] = {2, 4};
         maxArea(heights);   
+        maxArea(heights2);
     }
 }
