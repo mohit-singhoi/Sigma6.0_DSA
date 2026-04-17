@@ -39,7 +39,7 @@ public class Qns_01 {
     }
 
     // Main method to test the function
-    public static void main(String[] args) {
+    public static void main(String[] args) { // O(n) time complexity and O(n) space complexity
         Node head1 = new Node('A');
         head1.next = new Node('B');
         head1.next.next = new Node('C');
