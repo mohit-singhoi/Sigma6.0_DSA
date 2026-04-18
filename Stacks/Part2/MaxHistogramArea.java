@@ -1,7 +1,6 @@
-
+// WAP to find the maximum area of a histogram given an array of heights.
 import java.util.Stack;
 
-// WAP to find the maximum area of a histogram given an array of heights.
 public class MaxHistogramArea {
     public static void maxArea(int heights[]){ // O(n) -> Optimized Solution
         int maxArea = 0;
