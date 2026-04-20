@@ -52,7 +52,7 @@ public class QueueLL {
             return frontData;
         }
 
-        // Peek
+        // Peek : O(1)
         public int peek() {
             if (isEmpty()) {
                 System.out.println("Queue is empty");
@@ -71,9 +71,11 @@ public class QueueLL {
         q.add(4);
         q.add(5);
 
+        System.out.println("Size of the queue: " + q.size);
         while (!q.isEmpty()) {
             System.out.println(q.peek());
             q.remove();
         }
+
     }
 }
