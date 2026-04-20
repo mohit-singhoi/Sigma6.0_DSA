@@ -1,43 +1,53 @@
-// WAP in Queue to add remove and display the elements of the queue.
-
-public class QueueOp {
+// Circular Queue implementation in Java
+public class CircularQueue {
     static class Queue {
         int arr[];
         int size;
+        int front;
         int rear;
 
         Queue(int n) {
             arr = new int[n];
             size = n;
+            front = -1;
             rear = -1;
         }
 
         public boolean isEmpty() {
-            return rear == -1;
+            return front == -1 && rear == -1;
+        }
+
+        public boolean isFull() {
+            return (rear + 1) % size == front;
         }
 
         // add : O(1)
         public void add(int data) {
-            if (rear == size - 1) {
+            if (isFull()) {
                 System.out.println("Queue is full");
                 return;
             }
-            rear++;
+            if (isEmpty()) {
+                front = 0;
+            }
+            rear = (rear + 1) % size;
             arr[rear] = data;
         }
 
-        // remove : O(n) because we have to shift all the elements to the left after removing the front element
+        // remove : O(1)
         public int remove() {
             if (isEmpty()) {
                 System.out.println("Queue is empty");
                 return -1;
             }
-            int front = arr[0];
-            for (int i = 0; i < rear; i++) {
-                arr[i] = arr[i + 1];
+            int frontElement = arr[front];
+            if (front == rear) { // Only one element in the queue
+                front = -1;
+                rear = -1;
+            } else {
+                front = (front + 1) % size;
             }
-            rear--;
-            return front;
+            return frontElement;
         }
 
         // Peek
@@ -46,7 +56,7 @@ public class QueueOp {
                 System.out.println("Queue is empty");
                 return -1;
             }
-            return arr[0];
+            return arr[front];
         }
 
     }
@@ -61,11 +71,16 @@ public class QueueOp {
         q.add(5);
         q.add(6); // Queue is full
 
-        // in Stack print 5,4,3,2,1 but in Queue print 1,2,3,4,5
+        System.out.println(q.remove()); // 1
+        q.add(6); // Now we can add 6
+        System.out.println(q.remove()); // 2
+
+
+
         while (!q.isEmpty()) {
             System.out.println(q.peek());
             q.remove();
         }
     }
-
+    
 }
