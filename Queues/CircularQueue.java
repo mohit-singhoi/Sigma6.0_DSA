@@ -76,11 +76,9 @@ public class CircularQueue {
         System.out.println(q.remove()); // 2
 
 
-
         while (!q.isEmpty()) {
             System.out.println(q.peek());
             q.remove();
         }
     }
-    
 }
