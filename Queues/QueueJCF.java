@@ -2,7 +2,7 @@
 
 import java.util.*;
 public class QueueJCF {
-    public static void main(String[] args) {
+    public static void main(String[] args) { // O(1)
        // Queue<Integer> q = new LinkedList<>();
         Queue<Integer> q = new ArrayDeque<>();
         q.add(1);
