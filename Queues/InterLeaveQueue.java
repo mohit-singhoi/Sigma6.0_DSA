@@ -31,6 +31,7 @@ public class InterLeaveQueue {
     
             interLeave(q);
             // Print the interleaved queue
+            System.out.print("Interleaved Queue : ");
             while(!q.isEmpty()){
                 System.out.print(q.remove()+" ");
             }
