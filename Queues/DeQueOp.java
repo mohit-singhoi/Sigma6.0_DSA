@@ -29,6 +29,13 @@ public class DeQueOp {
 
         // peekLast() : O(1)
         System.out.println("Rear element : " + dq.peekLast());
+        
+        // Final state of Deque
+        System.out.println("Final Deque : " + dq);
+
+        // getFirst() and getLast() : O(1)
+        System.out.println("First element using getFirst() : " + dq.getFirst());
+        System.out.println("Last element using getLast() : " + dq.getLast());
 
     }
     
