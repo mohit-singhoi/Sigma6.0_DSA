@@ -31,7 +31,7 @@ public class SDeque {
         System.out.println(s.pop()); // Output: 3
         System.out.println(s.pop()); // Output: 2
         System.out.println(s.pop()); // Output: 1
-        System.out.println(s.isEmpty()); // Output: false
+        System.out.println(s.isEmpty()); // Output: true
     }
     
 }
