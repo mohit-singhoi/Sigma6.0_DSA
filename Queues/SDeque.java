@@ -28,9 +28,13 @@ public class SDeque {
         s.push(2);
         s.push(3);
         System.out.println("Peek :"+ s.top()); // Output: 3
-        System.out.println(s.pop()); // Output: 3
-        System.out.println(s.pop()); // Output: 2
-        System.out.println(s.pop()); // Output: 1
+
+        while(!s.isEmpty()) {
+            System.out.println(s.pop());
+        }
+        // System.out.println(s.pop()); // Output: 3
+        // System.out.println(s.pop()); // Output: 2
+        // System.out.println(s.pop()); // Output: 1
         System.out.println(s.isEmpty()); // Output: true
     }
     
