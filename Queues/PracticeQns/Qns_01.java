@@ -1,4 +1,4 @@
-// Qns 1: generate Binary Numbers
+// Qns 1: Generate Binary Numbers
 // Given a number N, generate all binary numbers with decimal values from 1 to N.
 
 package PracticeQns;
