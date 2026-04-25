@@ -21,7 +21,7 @@ public class ActivitySelection1 {
             activities[i][2] = end[i];
         }
 
-        // Lambda function -> sortfrom the end time
+        // Lambda function -> Sortfrom 
         Arrays.sort(activities, Comparator.comparingDouble(o -> o[2]));
 
         // End time basis sorted activities
