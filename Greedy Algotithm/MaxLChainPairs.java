@@ -3,7 +3,7 @@
 import java.util.*;
 
 public class MaxLChainPairs {
-    public static void main(String[] args) {
+    public static void main(String[] args) { // O(nlogn)
         int pairs[][] = { { 5, 24 }, { 15, 25 }, { 27, 40 }, { 50, 60 } };
 
         Arrays.sort(pairs, Comparator.comparingDouble(o -> o[1]));
