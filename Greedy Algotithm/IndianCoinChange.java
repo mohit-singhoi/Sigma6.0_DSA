@@ -5,7 +5,7 @@ import java.util.*;
 public class IndianCoinChange {
     public static void main(String[] args) {
         int coins[] = { 1, 2, 5, 10, 20, 50, 100, 200, 500, 2000 };
-        int amount = 43;
+        int amount = 433;
 
         int originalAmount = amount;
 
