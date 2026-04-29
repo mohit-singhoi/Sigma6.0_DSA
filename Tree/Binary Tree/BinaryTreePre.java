@@ -1,6 +1,6 @@
 // Binary Tree Preorder Traversal
 public class BinaryTreePre {
-    static class Node {
+    public static class Node {
         int data;
         Node left;
         Node right;
@@ -40,14 +40,14 @@ public class BinaryTreePre {
         preorder(root.right);
     }
 
-public static void main(String[] args) {
-    int nodes[] = {1, 2, 4, -1, -1, -1, 3, -1, 6, -1, -1};
+    public static void main(String[] args) {
+        int nodes[] = { 1, 2, 4, -1, -1, -1, 3, -1, 6, -1, -1 };
 
-    Node root = BinaryTree.buildTree(nodes);
+        Node root = BinaryTree.buildTree(nodes);
 
-    System.out.println("Root Node: " + root.data);
+        System.out.println("Root Node: " + root.data);
 
-    System.out.print("Preorder Traversal: ");
-   preorder(root);
-}
+        System.out.print("Preorder Traversal: ");
+        preorder(root);
+    }
 }
