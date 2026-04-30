@@ -1,5 +1,5 @@
 // Binary Tree Preorder Traversal
-public class BinaryTreePre {
+public class BinaryTreePreOrder {
     public static class Node {
         int data;
         Node left;
