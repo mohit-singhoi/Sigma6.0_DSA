@@ -30,14 +30,16 @@ public class BinaryTreePre {
     }
 
     // Preorder Traversal
-    public static void preorder(Node root) {
+    public static int preorder(Node root) {
         if (root == null) {
-            return;
+            System.out.print("-1"+ " ");
+            return -1;
         }
 
         System.out.print(root.data + " ");
         preorder(root.left);
         preorder(root.right);
+        return -1;
     }
 
     public static void main(String[] args) { // O(n) time complexity
