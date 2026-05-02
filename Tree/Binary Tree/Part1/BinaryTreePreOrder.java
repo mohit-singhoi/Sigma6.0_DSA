@@ -1,6 +1,6 @@
-// Post Order Traversal of Binary Tree
-
-public class BinaryTreePostOrder {
+package Part1;
+// Binary Tree Preorder Traversal
+public class BinaryTreePreOrder {
     public static class Node {
         int data;
         Node left;
@@ -30,17 +30,17 @@ public class BinaryTreePostOrder {
         }
     }
 
-    // Postorder Traversal
-    public static void postorder(Node root) {
+    // Preorder Traversal
+    public static int preorder(Node root) {
         if (root == null) {
-            // System.out.print("-1"+ " ");
-            return;
+            System.out.print("-1"+ " ");
+            return -1;
         }
 
-        postorder(root.left);
-        postorder(root.right);
         System.out.print(root.data + " ");
-
+        preorder(root.left);
+        preorder(root.right);
+        return -1;
     }
 
     public static void main(String[] args) { // O(n) time complexity
@@ -50,8 +50,7 @@ public class BinaryTreePostOrder {
 
         System.out.println("Root Node: " + root.data);
 
-        System.out.print("Postorder Traversal: ");
-        postorder(root);
+        System.out.print("Preorder Traversal: ");
+        preorder(root);
     }
-    
 }

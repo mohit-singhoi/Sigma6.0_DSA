@@ -1,3 +1,4 @@
+package Part1;
 // Given a binary tree, find the sum of all the nodes in the tree.
 
 public class NodeSum {
@@ -15,14 +16,14 @@ public class NodeSum {
 
     // Sum of all Nodes
     public static int totalSum(Node root){
-        int treesum =0;
+       // int treesum =0;
         if(root == null){
             return 0;
         }
 
        int  lsum = totalSum(root.left);
        int  rsum = totalSum(root.right);
-       return treesum = lsum +rsum +root.data;
+       return   lsum +rsum +root.data;
     }
 
 

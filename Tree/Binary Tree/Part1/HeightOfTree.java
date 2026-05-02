@@ -1,3 +1,4 @@
+package Part1;
 // Height of a binary tree is the number of edges on the longest path from the root to a leaf node using recursion.
 public class HeightOfTree {
     static class Node {

@@ -1,5 +1,7 @@
-// Binary Tree Preorder Traversal
-public class BinaryTreePreOrder {
+package Part1;
+// Binary Tree Inorder Traversal
+
+public class BinaryTreeInOrder {
     public static class Node {
         int data;
         Node left;
@@ -29,17 +31,17 @@ public class BinaryTreePreOrder {
         }
     }
 
-    // Preorder Traversal
-    public static int preorder(Node root) {
+    // Inorder Traversal
+    public static void inorder(Node root) {
         if (root == null) {
-            System.out.print("-1"+ " ");
-            return -1;
+            // System.out.print("-1"+ " ");
+            return;
         }
 
+        inorder(root.left);
         System.out.print(root.data + " ");
-        preorder(root.left);
-        preorder(root.right);
-        return -1;
+        inorder(root.right);
+
     }
 
     public static void main(String[] args) { // O(n) time complexity
@@ -49,7 +51,7 @@ public class BinaryTreePreOrder {
 
         System.out.println("Root Node: " + root.data);
 
-        System.out.print("Preorder Traversal: ");
-        preorder(root);
+        System.out.print("Inorder Traversal: ");
+        inorder(root);
     }
 }

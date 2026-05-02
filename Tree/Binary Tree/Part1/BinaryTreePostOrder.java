@@ -1,6 +1,7 @@
-// Binary Tree Inorder Traversal
+package Part1;
+// Post Order Traversal of Binary Tree
 
-public class BinaryTreeInOrder {
+public class BinaryTreePostOrder {
     public static class Node {
         int data;
         Node left;
@@ -30,16 +31,16 @@ public class BinaryTreeInOrder {
         }
     }
 
-    // Inorder Traversal
-    public static void inorder(Node root) {
+    // Postorder Traversal
+    public static void postorder(Node root) {
         if (root == null) {
             // System.out.print("-1"+ " ");
             return;
         }
 
-        inorder(root.left);
+        postorder(root.left);
+        postorder(root.right);
         System.out.print(root.data + " ");
-        inorder(root.right);
 
     }
 
@@ -50,7 +51,8 @@ public class BinaryTreeInOrder {
 
         System.out.println("Root Node: " + root.data);
 
-        System.out.print("Inorder Traversal: ");
-        inorder(root);
+        System.out.print("Postorder Traversal: ");
+        postorder(root);
     }
+    
 }
