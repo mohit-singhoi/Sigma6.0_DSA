@@ -47,11 +47,11 @@ public class Subtree {
     // Main Function
     public static void main(String[] args) {
         /*
-         * Tree 1
-         * / \
-         * 2 3
-         * / \ / \
-         * 4 5 6 7
+         * Tree   1
+         *       /  \
+         *      2   3
+         *     / \  / \
+         *    4  5  6  7
          * 
          */
         Node root = new Node(1);
@@ -63,11 +63,10 @@ public class Subtree {
         root.right.right = new Node(7);
     
 
-    /*
-     * Subtree
-     * 2
+    /*Subtree
+     *  2
      * / \
-     * 4 5
+     * 4  5
      */
 
     Node subRoot = new Node(2);
