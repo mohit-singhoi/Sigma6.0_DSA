@@ -1,5 +1,5 @@
 // Diameter of a tree is the longest path between any two nodes in the tree. The path may or may not pass through the root.
-public class DiameterOfTree {
+public class DiameterOfTree1 {
     static class Node {
         int data;
         Node left;
