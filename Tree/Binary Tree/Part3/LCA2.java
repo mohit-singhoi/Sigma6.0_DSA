@@ -53,7 +53,7 @@ public class LCA2 {
             / \   / \
            4   5 6   7
         */
-        int n1 = 4, n2 = 5;
+        int n1 = 4, n2 = 6;
         Node lca = lca(root, n1, n2);
         if (lca != null) {
             System.out.println("Lowest Common Ancestor of " + n1 + " and " + n2 + " is: " + lca.data);
