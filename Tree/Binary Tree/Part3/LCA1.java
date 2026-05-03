@@ -3,7 +3,7 @@ package Part3;
 
 import java.util.ArrayList;
 
-public class LCA {
+public class LCA1 {
     static class Node{
         int data;
         Node left;
