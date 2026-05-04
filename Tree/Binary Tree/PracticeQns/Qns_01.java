@@ -35,7 +35,7 @@ public class Qns_01 {
         return true; // All nodes have the same value
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) { // O(n) time complexity, where n is the number of nodes in the tree
         // Example usage:
         Node root = new Node(1);
         root.left = new Node(1);

@@ -32,7 +32,7 @@ public class Qns_05 {
         return root.data + Math.max(leftSum, rightSum);
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) { // O(n) time complexity, where n is the number of nodes in the tree
         // Example usage:
 
         /*

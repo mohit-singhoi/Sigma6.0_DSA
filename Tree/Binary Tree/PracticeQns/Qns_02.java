@@ -40,7 +40,7 @@ public class Qns_02 {
         printInOrder(node.right);
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) { // O(n) time complexity, where n is the number of nodes in the tree
         // Example usage:
 
         /*

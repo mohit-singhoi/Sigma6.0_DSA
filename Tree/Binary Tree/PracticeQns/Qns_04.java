@@ -42,19 +42,20 @@ public class Qns_04 {
         return subtree;
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) { // O(n) time complexity, where n is the number of nodes in the tree
+        // Example usage:
 
 
             /* Example Tree:
             *       1
             *     /   \
-            *    2    3
-            *   / \   / \
-            *   4 5   6   5
-            *  /       /  \  \
-            * 5      4   4  5
-            *   
-            * 
+            *    2     3
+            *   / \   /  \
+            *   4  5  6   5
+            *  /   /     /  \
+            * 5   4      4  5
+            *
+            *
             * Duplicate Subtrees:
             * Subtree rooted at node with value 4 (appears twice)
             * Subtree rooted at node with value 5 (appears twice)
