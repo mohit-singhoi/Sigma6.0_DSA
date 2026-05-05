@@ -1,4 +1,4 @@
-// Build a BST
+// Build a BST(Binary Search tree)
 // Values[] = {5,1,3,4,2,7}
 
 //package Binary Search Tree.Part1;
