@@ -28,7 +28,7 @@ public class SearchBST {
     }
 
 
-    // Search operation in a BST
+    // Search operation in a BST : O(h) where h is the height of the tree
     public static boolean search(Node root, int key) {
         // Base case: root is null or key is present at root
         if (root == null) {
