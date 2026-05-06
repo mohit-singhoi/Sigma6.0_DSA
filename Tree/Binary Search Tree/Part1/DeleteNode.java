@@ -95,7 +95,7 @@ public class DeleteNode {
         System.out.println();
 
         // Delete a key
-        int keyToDelete = 11;
+        int keyToDelete = 3;
         root = delete(root, keyToDelete);
         System.out.println("Inorder traversal after deleting " + keyToDelete + ":");
         inorder(root);
