@@ -27,7 +27,7 @@ public class SearchBST {
         return root;
     }
 
-    
+
     // Search operation in a BST
     public static boolean search(Node root, int key) {
         // Base case: root is null or key is present at root
