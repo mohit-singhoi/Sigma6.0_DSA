@@ -73,13 +73,13 @@ public class PrintInRange {
 
     // Main function
     public static void main(String[] args) {
-        int values[] = { 4, 2, 7, 1, 3 };
+        int values[] = { 8, 5, 3, 1, 4, 6, 10, 11, 14 };
         Node root = null;
         for (int value : values) {
             root = insert(root, value);
         }
-        int low = 2;
-        int high = 5;
+        int low = 5;
+        int high = 11;
         System.out.print("Elements in the range [" + low + ", " + high + "] are : " + "");
         printInRange(root, low, high);
     }
