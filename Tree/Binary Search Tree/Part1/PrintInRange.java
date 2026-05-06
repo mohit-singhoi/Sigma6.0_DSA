@@ -48,7 +48,28 @@ public class PrintInRange {
     //     }
     // }
 
-    
+    public static void printInRange(Node root, int low, int high) {
+        if (root == null) {
+            return;
+        }
+
+        if(root.data >= low && root.data <= high) {
+            printInRange(root.left, low, high);
+            System.out.print(root.data + " ");
+            printInRange(root.right, low, high);
+        }
+
+        else if(root.data < low) {
+            printInRange(root.left, low, high);
+        }
+
+        else {
+            printInRange(root.right, low, high);
+        }
+
+    }
+
+
 
     // Main function
     public static void main(String[] args) {
