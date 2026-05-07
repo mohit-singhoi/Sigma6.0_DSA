@@ -27,7 +27,7 @@ public class DeleteNode {
         return root;
     }
 
-    // Function to delete a node from BST
+    // Function to delete a node from BST : O(h) where h is the height of the tree
     public static Node delete(Node root, int value) {
         // Base case: If the tree is empty
         if (root == null) {
