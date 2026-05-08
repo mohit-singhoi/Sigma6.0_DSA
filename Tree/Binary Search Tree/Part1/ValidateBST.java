@@ -27,7 +27,7 @@ public class ValidateBST {
         return root;
     }
 
-    // Function to check if a binary tree is a valid BST : O(n)
+    // Function to check if a binary tree is a valid BST : TC : O(n)
     public static boolean isValidBST(Node root, Node min, Node max) {
         if (root == null) {
             return true;
