@@ -2,7 +2,7 @@
 
 package Part2;
 
-import java.util.ArrayList;
+import java.util.*;
 
 public class ConvertBST2BalancedBST {
     static class Node{
@@ -50,7 +50,7 @@ public class ConvertBST2BalancedBST {
         return root;
     }
 
-    //Balanced BST
+    //Balanced BST : O(n)
     public static Node balancedBST(Node root){
         //inorder seq
         ArrayList<Integer> inorder = new ArrayList<>();
