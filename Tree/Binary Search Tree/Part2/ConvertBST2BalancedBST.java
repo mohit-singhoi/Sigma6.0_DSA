@@ -22,7 +22,7 @@ public class ConvertBST2BalancedBST {
         if(root == null){
             return;
         }
-        System.out.println(root.data +" ");
+        System.out.print(root.data +" ");
         preorder(root.left);
         preorder(root.right);
     }
@@ -93,6 +93,7 @@ public class ConvertBST2BalancedBST {
 
         */
       root =  balancedBST(root);
+      System.out.print("PreOrder Sequence : ");
       preorder(root);
 
     }
