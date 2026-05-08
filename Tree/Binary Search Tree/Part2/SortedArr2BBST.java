@@ -1,7 +1,6 @@
 // This class will contain the code to convert a sorted array into a balanced binary search tree (BBST).
 
-//package Part2;
-import java.util.*;
+package Part2;
 
 public class SortedArr2BBST {
     // Definition for a binary tree node.
@@ -53,6 +52,7 @@ public class SortedArr2BBST {
         Node root = createBST(Arr, 0, Arr.length - 1);
         System.out.println("Preorder traversal of the balanced binary search tree:");
         preorder(root);
+    }
 
     
 }
