@@ -27,6 +27,8 @@ public class AVLTree {
         return (a > b) ? a : b;
     }
 
+
+
     // Right rotate subtree rotated with y
     public static Node rightRotate(Node y) {
         Node x = y.left;
@@ -35,7 +37,33 @@ public class AVLTree {
         // Perform rotation
         x.right = y;
         y.left = T2;
+
+        //Update heights
+        y.height = max(height(y.left), height(y.right)) +1;
+        x.height = max(height(x.left), height(x.right)) +1;
+
+        // Return new root
+        return x;
     }
+
+
+    // Left Rotatesubtree rotated with x
+    public static Node leftRotate(Node x){
+        Node y = x.right;
+        Node T2 = y.left;
+
+        // Perform rotation
+        y.left = x;
+        x.right = T2;
+
+        // Update heights
+        x.height = max(height(x.left), height(x.right)) +1;
+        y.height = max(height(y.left), height(y.right)) +1;
+
+        // Return new root
+        return y;
+    }
+
 
     // GetBalance
     public static int getBalance(Node root) {
@@ -65,6 +93,41 @@ public class AVLTree {
     int bf = getBalance(root);
 
     // Left Left Case
+    if(bf > 1 && key < root.left.data)
+        return rightRotate(root);
+
+    // Right Right case
+    if(bf < -1 && key > root.right.data)
+        return leftRotate(root);
+
+    // Left Right Case
+    if(bf > 1 && key > root.left.data){
+        root.left = leftRotate(root.left);
+        return rightRotate(root);
+    }
+
+    // Right Left Case
+    if(bf < -1 && key < root.right.data){
+        root.right = rightRotate(root.right);
+        return leftRotate(root);
+    }
+
+    return root; // returned if AVL balanced
     
+    }
+
+    // Print BST in Preorder
+    public static void preOrder(Node root){
+        if(root == null){
+            return;
+        }
+        System.out.println(root.data + "");
+        preOrder(root.left);
+        preOrder(root.right);
+    }
+
+    // Main Fun
+    public static void main(String[] args) {
+        
     }
 }
