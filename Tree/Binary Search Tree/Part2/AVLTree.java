@@ -1,5 +1,6 @@
 // AVL Tree : Balanced BST
 
+
 package Part2;
 
 public class AVLTree {
@@ -121,13 +122,31 @@ public class AVLTree {
         if(root == null){
             return;
         }
-        System.out.println(root.data + "");
+        System.out.print(root.data + " ");
         preOrder(root.left);
         preOrder(root.right);
     }
 
     // Main Fun
     public static void main(String[] args) {
-        
+        root = insert(root, 10);
+        root = insert(root, 20);
+        root = insert(root, 30);
+        root = insert(root, 40);
+        root = insert(root, 50);
+        root = insert(root, 25);
+
+        /*   AVL Tree
+             
+                30
+               /  \
+              20  40
+              / \  \
+             10 25  50
+
+        */
+
+       System.out.print("Balanced BST : ");
+        preOrder(root);
     }
 }
