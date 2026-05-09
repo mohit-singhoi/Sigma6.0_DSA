@@ -78,7 +78,7 @@ public class SLargestBST {
      root.right.right.right = new Node(80);
 
 
-     /* Expected BST
+     /* Expected BST Size = 5
                60
               /  \
               45 70
