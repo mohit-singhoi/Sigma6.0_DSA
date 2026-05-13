@@ -1,9 +1,14 @@
+import java.util.Comparator;
 import java.util.PriorityQueue;
 
 public class PriorityQueueOp {
     public static void main(String[] args) {
 
-        PriorityQueue<Integer> pq = new PriorityQueue<>();
+      // For Ascending order : Low value first priority
+      //  PriorityQueue<Integer> pq = new PriorityQueue<>();
+
+      // For Descending Order : High value first priority
+      PriorityQueue<Integer> pq = new PriorityQueue<>(Comparator.reverseOrder());
 
         pq.add(40); // O(logn)
         pq.add(10);
