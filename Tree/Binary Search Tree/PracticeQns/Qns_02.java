@@ -3,7 +3,7 @@
 
 package PracticeQns;
 
-public class Qns_0 {
+public class Qns_02 {
      // Node Class
     static class Node {
         int data;
