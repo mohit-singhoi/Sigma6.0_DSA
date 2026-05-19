@@ -78,6 +78,11 @@ public class DeleteHeap {
             // i = minIdx;
             // }
         }
+
+        // Check if Heap is empty
+        public boolean isEmpty() {
+            return arr.size() == 0;
+        }
     }
 
     // Print Heap in Preorder
@@ -105,5 +110,7 @@ public class DeleteHeap {
         System.out.println("Removed: " + removed);
         System.out.println(h.arr);
         preOrder(h.arr, 0);
+
+        System.out.println("\nIs Empty: " + h.isEmpty());
     }
 }
