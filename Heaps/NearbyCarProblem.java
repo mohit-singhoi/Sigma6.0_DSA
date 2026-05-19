@@ -39,8 +39,8 @@ public class NearbyCarProblem {
         // Print the nearest k cars
         for(int i=0; i<k; i++){
             Point p = pq.poll();
-            System.out.println("Nearest Car " + (i+1) + "");
-            System.out.println("C" + p.idx + ": (" + p.x + ", " + p.y + ")");
+            System.out.print("Nearest Car " + (i+1) + " : ");
+            System.out.println("C" + p.idx + "(" + p.x + ", " + p.y + ")");
         }
     }
     
