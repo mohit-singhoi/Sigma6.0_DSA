@@ -43,8 +43,8 @@ public class HeapSort {
         }
     }
 
-    public static void main(String[] args) {
-        int[] arr = {5, 3, 8, 4, 1};
+    public static void main(String[] args) { // O(nlogn)
+        int[] arr = {1,2,4,5,3};
 
         // Before sorting
         System.out.println("Before Heap Sort:");
