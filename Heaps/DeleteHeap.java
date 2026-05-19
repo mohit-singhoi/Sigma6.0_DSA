@@ -79,6 +79,11 @@ public class DeleteHeap {
             // }
         }
 
+        // Peek
+        public int peek() {
+            return arr.get(0);
+        }
+
         // Check if Heap is empty
         public boolean isEmpty() {
             return arr.size() == 0;
@@ -97,10 +102,15 @@ public class DeleteHeap {
 
     public static void main(String[] args) {
         Heap h = new Heap();
-        h.add(5);
         h.add(3);
-        h.add(8);
+        h.add(4);
         h.add(1);
+        h.add(5);
+
+        // while(!h.isEmpty()) {
+        //     System.out.println(h.peek());
+        //     h.remove();
+        // }
 
         System.out.println(h.arr);
         preOrder(h.arr, 0);
