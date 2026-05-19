@@ -22,34 +22,61 @@ public class DeleteHeap {
                 par = (x - 1) / 2;
             }
         }
-    }
 
-    // Remove
-    public static void remove(ArrayList<Integer> arr) {
-        int last = arr.size() - 1;
-        // swap first and last
-        int temp = arr.get(0);
-        arr.set(0, arr.get(last));
-        arr.set(last, temp);
-        arr.remove(last);
-        // down heapify
-        int i = 0;
-        int left = 2 * i + 1;
-        int right = 2 * i + 2;
-        int minIdx = i;
+        private void hipify(int i) {
+            int left = 2 * i + 1;
+            int right = 2 * i + 2;
+            int minIdx = i;
 
-        if (left < arr.size() && arr.get(minIdx) > arr.get(left)) {
-            minIdx = left;
+            if (left < arr.size() && arr.get(minIdx) > arr.get(left)) {
+                minIdx = left;
+            }
+            if (right < arr.size() && arr.get(minIdx) > arr.get(right)) {
+                minIdx = right;
+            }
+            if (minIdx != i) {
+                // swap
+                int temp = arr.get(i);
+                arr.set(i, arr.get(minIdx));
+                arr.set(minIdx, temp);
+
+                hipify(minIdx);
+            }
         }
-        if (right < arr.size() && arr.get(minIdx) > arr.get(right)) {
-            minIdx = right;
-        }
-        if (minIdx != i) {
-            // swap
-            temp = arr.get(i);
-            arr.set(i, arr.get(minIdx));
-            arr.set(minIdx, temp);
-            i = minIdx;
+
+        // Remove
+        public int remove() {
+            int last = arr.size() - 1;
+            // Step1 : swap first and last
+            int temp = arr.get(0);
+            arr.set(0, arr.get(last));
+            arr.set(last, temp);
+
+            // Step2 : remove last
+            arr.remove(last);
+
+            // Step3 : down heapify
+            hipify(0);
+            return temp;
+
+            // int i = 0;
+            // int left = 2 * i + 1;
+            // int right = 2 * i + 2;
+            // int minIdx = i;
+
+            // if (left < arr.size() && arr.get(minIdx) > arr.get(left)) {
+            // minIdx = left;
+            // }
+            // if (right < arr.size() && arr.get(minIdx) > arr.get(right)) {
+            // minIdx = right;
+            // }
+            // if (minIdx != i) {
+            // // swap
+            // temp = arr.get(i);
+            // arr.set(i, arr.get(minIdx));
+            // arr.set(minIdx, temp);
+            // i = minIdx;
+            // }
         }
     }
 
@@ -74,7 +101,8 @@ public class DeleteHeap {
         preOrder(h.arr, 0);
         System.out.println();
 
-        remove(h.arr);
+        int removed = h.remove();
+        System.out.println("Removed: " + removed);
         System.out.println(h.arr);
         preOrder(h.arr, 0);
     }
