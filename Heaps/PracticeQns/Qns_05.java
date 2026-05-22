@@ -83,6 +83,7 @@ public class Qns_05 {
 
         Node result = mergeKLists(lists, 3);
 
+        System.out.println("Merged linked list:");
         printList(result);
     }
 }
