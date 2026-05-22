@@ -1,5 +1,5 @@
 // Weakest Soldier Problem
-//
+// We have an m x n binary matrix army where each row represents a row of soldiers and civilians. Soldiers are represented by 1s and civilians are represented by 0s. Each row is sorted in non-increasing order (i.e., all the 1s come before any 0s). We want to find the indices of the k weakest rows in the matrix, where the weakness of a row is determined by the number of soldiers in that row. If there are multiple rows with the same number of soldiers, we consider the row with the smaller index to be weaker. Return the indices of the k weakest rows in the matrix ordered from weakest to strongest.
 
 import java.util.*;
 public class WeakestSoldierProblem {
