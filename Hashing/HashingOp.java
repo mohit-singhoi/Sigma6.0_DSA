@@ -30,6 +30,7 @@ public class HashingOp {
         // contains key : O(1)
         boolean hasKey = map.containsKey(102);
         System.out.println("Contains key 102: " + hasKey);
+        System.out.println(map.containsKey(104));
 
         // contains value : O(n)
         boolean hasValue = map.containsValue("Rahul");
@@ -38,6 +39,10 @@ public class HashingOp {
         // Size of the map : O(1)
         int size = map.size();
         System.out.println("Size of the map: " + size);
+
+        // Is empty : O(1)
+        boolean isEmpty = map.isEmpty();
+        System.out.println("Is the map empty? " + isEmpty);
 
         // Clearing the map : O(1)
         map.clear();
