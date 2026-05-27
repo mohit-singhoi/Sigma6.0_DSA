@@ -1,4 +1,4 @@
-// Iterations on HashMap
+// Perform Iterations on HashMap
 
 import java.util.*;
 public class HMapIteration {
