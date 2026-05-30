@@ -10,7 +10,7 @@
 import java.util.*;
 public class MajorityElement {
     public static void main(String[] args) {
-        int arr[] = {1,3,2,5,1,3,1,5,1};
+        int arr[] = {1,3,2,3,5,1,3,1,5,1,3};
         HashMap<Integer, Integer> map = new HashMap<>();
 
         for(int i =0;i<arr.length;i++){
@@ -24,12 +24,16 @@ public class MajorityElement {
             map.put(arr[i] , map.getOrDefault(arr[i],0) + 1);
         }
 
-        Set<Integer> keySet = map.keySet();
-        for(Integer key : keySet){
+
+        System.out.println("Majority Elements :");
+       // Set<Integer> keySet = map.keySet();
+       System.out.print("{");
+        for(Integer key : map.keySet()){
             if(map.get(key) > arr.length/3){
-                System.out.println("Majority Element : " + key);
+                System.out.print(key +" ");
             }
         }
+        System.out.print("}");
     }
     
 }
