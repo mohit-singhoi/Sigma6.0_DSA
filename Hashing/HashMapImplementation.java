@@ -66,7 +66,8 @@ public class HashMapImplementation {
         }
 
 
-        public void put(K key, V value) {
+        // Put key, value in hashmap
+        public void put(K key, V value) { // O(Lambda)- O(1)
             int bi = hashFunction(key); //  0 to 3
             int di =  SearchInLL(key , bi); // valid 
 
@@ -84,9 +85,11 @@ public class HashMapImplementation {
             }
         }
 
-        public boolean containsKey(K key) {
+        // Get value for key
+        public boolean containsKey(K key) { // O(Lambda) - O(1)
             int bi = hashFunction(key);
             int di = SearchInLL(key, bi);
+
             if (di != -1) { // valid index
                 return true;
             } else {
@@ -94,9 +97,11 @@ public class HashMapImplementation {
             }
         }
 
-        public V get(K key) {
+        // Get value for key
+        public V get(K key) { // O(Lambda) - O(1)
             int bi = hashFunction(key);
             int di = SearchInLL(key, bi);
+
             if (di != -1) { // valid index
                 Node node = buckets[bi].get(di);
                 return node.values;
@@ -106,9 +111,11 @@ public class HashMapImplementation {
         }
 
 
-        public V remove(K key) {
+        // Remove key, value from hashmap
+        public V remove(K key) { // O(Lambda) - O(1)
             int bi = hashFunction(key);
             int di = SearchInLL(key, bi);
+
             if (di != -1) { // valid index
                 Node node = buckets[bi].remove(di);
                 n--;
@@ -119,7 +126,8 @@ public class HashMapImplementation {
         }
 
 
-        public ArrayList<K> keySet() {
+        // Get all keys in hashmap
+        public ArrayList<K> keySet() { // O(N)
             ArrayList<K> keys = new ArrayList<>();
             for (int i=0; i<buckets.length; i++) {
                 LinkedList<Node> ll = buckets[i];
