@@ -129,10 +129,11 @@ public class HashMapImplementation {
         // Get all keys in hashmap
         public ArrayList<K> keySet() { // O(N)
             ArrayList<K> keys = new ArrayList<>();
+
             for (int i=0; i<buckets.length; i++) {
                 LinkedList<Node> ll = buckets[i];
-                for (int j=0; j<ll.size(); j++) {
-                    Node node = ll.get(j);
+                for (Node node : ll) {
+
                     keys.add(node.key);
                 }
             }
