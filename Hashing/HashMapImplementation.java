@@ -1,6 +1,8 @@
 //HashMap Implementation in Java
-
 import java.util.*;
+
+
+
 public class HashMapImplementation {
     static class HashMap<K,V>{ // generic
 
@@ -19,10 +21,10 @@ public class HashMapImplementation {
         private int N; // buckets.length
         private LinkedList<Node> buckets[]; // N = buckets.length
 
-       // @SuppressWarnings("unchecked")
+       @SuppressWarnings("unchecked")
         public HashMap() {
             this.N = 4;
-            this.buckets = new LinkedList[4]; // initial capacity
+            this.buckets = new LinkedList[N]; // initial capacity
             for (int i = 0; i < buckets.length; i++) {
                 buckets[i] = new LinkedList<>();
             }
@@ -159,6 +161,11 @@ public class HashMapImplementation {
         map.put("Japan", 20);
         map.put("Germany", 25);
 
+
+        ArrayList<String> keys = map.keySet();
+        for (String key : keys) {
+            System.out.println(key);
+        }
 
         System.out.println(map.get("India"));
         System.out.println(map.containsKey("India"));
