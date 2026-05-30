@@ -25,6 +25,7 @@ public class TreeMapImp {
         System.out.println(map);
         System.out.println();
         System.out.println("TreeMap Implementation:");
+        System.out.println("It is sorted according to keys in natural order (lexicographical order for String)");
         System.out.println(tm);
 
     }
