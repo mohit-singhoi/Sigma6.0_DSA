@@ -1,6 +1,6 @@
-//HashMap Implementation in Java
-import java.util.*;
+// Simple HashMap Implementation in Java
 
+import java.util.*;
 
 
 public class HashMapImplementation {
