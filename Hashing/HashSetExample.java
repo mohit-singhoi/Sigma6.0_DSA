@@ -33,6 +33,9 @@ public class HashSetExample {
         numbers.remove(20);
         System.out.println(names);
         System.out.println(numbers);
+        
+        System.out.println("Size of names set : " + names.size());
+        System.out.println("Size of numbers set : " + numbers.size());
 
     }
 }
