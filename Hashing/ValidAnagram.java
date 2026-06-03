@@ -15,6 +15,9 @@ import java.util.*;
 
 public class ValidAnagram {
     public static boolean isAnagarm(String s, String t) {
+        if(s.length() != t.length()){
+            return false;
+        }
         HashMap<Character, Integer> map = new HashMap<>();
 
         for(int i= 0; i<s.length();i++){
@@ -40,7 +43,7 @@ public class ValidAnagram {
     }
 
     // Main Function
-    public static void main(String[] args) {
+    public static void main(String[] args) { // O(n) : N is the length of the string
         String s = "race";
         String t = "care";
 
