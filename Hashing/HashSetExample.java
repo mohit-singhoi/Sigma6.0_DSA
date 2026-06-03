@@ -29,5 +29,10 @@ public class HashSetExample {
             System.out.println("40 Present in the set.");
         }
 
+        names.remove("Aman");
+        numbers.remove(20);
+        System.out.println(names);
+        System.out.println(numbers);
+
     }
 }
