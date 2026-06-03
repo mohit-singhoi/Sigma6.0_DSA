@@ -1,24 +1,27 @@
-import java.util.HashSet;
+import java.util.*;
 
 public class HashSetIterate {
     public static void main(String[] args) {
-        HashSet<String> names = new HashSet<>();
+        HashSet<String> cities = new HashSet<>();
 
-        names.add("Mohit");
-        names.add("Rahul");
-        names.add("Aman");
+        cities.add("Mumbai");
+        cities.add("Delhi");
+        cities.add("Noida");
+        cities.add("Pune");
+        cities.add("Hyderabad");
+        cities.add("Mumbai"); // Duplicate
 
-        // Iterating using for-each loop
+        // Iterating using for-each loop : Advance for loop
         System.out.println("Iterating using for-each loop:");
-        for (String name : names) {
-            System.out.println(name);
+        for (String city : cities) {
+            System.out.println(city);
         }
 
         // Iterating using iterator
         System.out.println("\nIterating using iterator:");
-        var iterator = names.iterator();
-        while (iterator.hasNext()) {
-            System.out.println(iterator.next());
+        Iterator it = cities.iterator();
+        while (it.hasNext()) {
+            System.out.println(it.next());
         }
     }
     
