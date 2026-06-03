@@ -41,6 +41,8 @@ public class HashSetOp {
         numbers.clear();
         System.out.println("After clear operation : " + names);
         System.out.println("After clear operation : " + numbers);
+        System.out.println("Is names set empty? : " + names.isEmpty());
+        System.out.println("Is numbers set empty? : " + numbers.isEmpty());
 
     }
 }
