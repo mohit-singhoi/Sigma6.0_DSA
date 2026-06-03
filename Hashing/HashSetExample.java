@@ -19,5 +19,15 @@ public class HashSetExample {
         System.out.println(names);
         System.out.println(numbers);
 
+        if(names.contains("Mohit")){
+            System.out.println("Mohit Present in the set.");
+        }
+        if(numbers.contains(10)){
+            System.out.println("10 Present in the set.");
+        }
+        if(numbers.contains(40)){
+            System.out.println("40 Present in the set.");
+        }
+
     }
 }
