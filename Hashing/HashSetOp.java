@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class HashSetExample {
+public class HashSetOp {
     public static void main(String[] args) {
 
         HashSet<String> names = new HashSet<>();
@@ -36,6 +36,11 @@ public class HashSetExample {
         
         System.out.println("Size of names set : " + names.size());
         System.out.println("Size of numbers set : " + numbers.size());
+
+        names.clear();
+        numbers.clear();
+        System.out.println("After clear operation : " + names);
+        System.out.println("After clear operation : " + numbers);
 
     }
 }
