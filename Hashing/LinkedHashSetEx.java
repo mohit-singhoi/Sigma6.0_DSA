@@ -23,6 +23,9 @@ public class LinkedHashSetEx {
         lhs.add("Mumbai"); // Duplicate
 
         System.out.println(lhs);
+
+        lhs.remove("Delhi");
+        System.out.println(lhs);
     }
 
 }
