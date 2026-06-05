@@ -1,4 +1,5 @@
-import java.util*;
+import java.util.*;
+
 
 public class UnionIntersection {
     public static void main(String[] args) {
@@ -16,7 +17,8 @@ public class UnionIntersection {
         }
 
         System.out.println("Union: " + union);
-        
+        System.out.println("Union size: " + union.size());
+
 
         // Find intersection
         HashSet<Integer> intersection = new HashSet<>();
@@ -29,6 +31,7 @@ public class UnionIntersection {
                 intersection.add(num);
             }
         }
+        System.out.println("Intersection: " + intersection.size());
         System.out.println("Intersection: " + intersection);
     }
 }
