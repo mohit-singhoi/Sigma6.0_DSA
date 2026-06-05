@@ -12,7 +12,7 @@ public class DistinctEle {
         return distinctElements.size();
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) { //O(n) time complexity, O(n) space complexity
         int[] arr = {1, 2, 3, 2, 4, 1};
         System.out.println("Number of distinct elements: " + countDistinct(arr));
     }
