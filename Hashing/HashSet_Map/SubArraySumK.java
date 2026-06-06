@@ -26,6 +26,8 @@ public class SubArraySumK {
             map.put(sum, map.getOrDefault(sum, 0)+1);
         }
         System.out.println("Answer : " +ans);
+
+        
     }
     
 }
