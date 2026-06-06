@@ -5,7 +5,7 @@ import java.util.*;
 public class UnionIntersection {
     public static void main(String[] args) {
         int[] arr1 = {1, 2, 3, 4, 5};
-        int[] arr2 = {4, 5, 6, 7, 8};
+        int[] arr2 = {4, 5, 6, 7, 8,9};
 
         // Find union
         HashSet<Integer> union = new HashSet<>();
