@@ -1,7 +1,7 @@
 // Create a Trie (also known as a Prefix Tree).
 
 import java.util.*;
-public class CreateTrie {
+public class TrieOp {
 
     public static class Node{
         Node children[] = new Node[26];
