@@ -43,7 +43,7 @@ public class TrieOp {
         }
         return curr.eow == true;
     }
-    
+
 
     public static void main(String [] args){
         String words[] = {"the" , "a" , "there", "their", "any" , "thee"};
@@ -51,6 +51,9 @@ public class TrieOp {
         for(int i=0;i<words.length;i++){
             insert(words[i]);
         }
+
+        System.out.println(search("the")); // true
+        System.out.println(search("these")); // false
 
         // The trie has been created with the given words.
         System.out.println(root.children[0] != null); // true (for 'a')
