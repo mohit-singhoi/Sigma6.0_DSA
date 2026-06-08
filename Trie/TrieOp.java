@@ -52,11 +52,11 @@ public class TrieOp {
             insert(words[i]);
         }
 
-        System.out.println(search("the")); // true
-        System.out.println(search("these")); // false
+        System.out.println("the exists: " + search("the")); // true
+        System.out.println("these exists: " + search("these")); // false
 
         // The trie has been created with the given words.
-        System.out.println(root.children[0] != null); // true (for 'a')
+        System.out.println("a exists: " + root.children[0] != null); // true (for 'a')
         
 
     }
