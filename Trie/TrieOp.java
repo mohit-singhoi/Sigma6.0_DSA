@@ -1,6 +1,5 @@
 // Create a Trie (also known as a Prefix Tree).
-
-import java.util.*;
+// A Trie is a tree-like data structure that is used to efficiently store and retrieve keys in a dataset of strings.
 public class TrieOp {
 
     public static class Node{
@@ -28,6 +27,7 @@ public class TrieOp {
         }
         curr.eow = true;
 
+        
     }
 
     public static void main(String [] args){
@@ -40,6 +40,7 @@ public class TrieOp {
         // The trie has been created with the given words.
         // Print the root node to verify the structure of the trie.
         System.out.println(root.children[0] != null); // true (for 'a')
+        
 
     }
     
