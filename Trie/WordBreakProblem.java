@@ -2,6 +2,7 @@
 
 // Create a Trie (also known as a Prefix Tree).
 // A Trie is a tree-like data structure that is used to efficiently store and retrieve keys in a dataset of strings.
+
 public class WordBreakProblem{
 
     public static class Node{
@@ -79,6 +80,7 @@ public class WordBreakProblem{
         System.out.println("Breakable: " + wordBreak(key)); // true
         System.out.println("Breakable: " + wordBreak(key2)); // true
         System.out.println("Breakable: " + wordBreak(key3)); // false
+        System.out.println("Breakable: " + wordBreak("samsungmobile")); // true
 
         
 
