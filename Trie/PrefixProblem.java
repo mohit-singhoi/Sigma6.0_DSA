@@ -32,7 +32,7 @@ public class PrefixProblem {
         curr.eow = true;
     }
 
-    public static void findPrefix(Node root, String ans) { // O(N) where N is the number of nodes in the Trie.
+    public static void findPrefix(Node root, String ans) { // O(L) Level order traversal of the Trie, where L is the length of the longest word in the Trie.
         if(root == null){
             return;
         }
