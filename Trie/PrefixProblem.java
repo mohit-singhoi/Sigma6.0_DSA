@@ -1,5 +1,6 @@
 // Find shortest unique prefix for every word in a given list of words. Assume that no word is prefix of another.
 
+import java.util.*;
 public class PrefixProblem {
     static class Node {
         Node[] children = new Node[26];
@@ -31,18 +32,21 @@ public class PrefixProblem {
         curr.eow = true;
     }
 
-    public static void findPrefix(String word, String ans, int idx) {
-        if (idx == word.length()) {
+    public static void findPrefix(Node root, String ans) {
+        if(root == null){
+            return;
+        }
+        if(root.freq == 1){
             System.out.println(ans);
             return;
         }
-        int i = word.charAt(idx) - 'a';
-        if (root.children[i].freq == 1) {
-            ans += word.charAt(idx);
-            System.out.println(ans);
-            return;
+        for(int i=0;i<root.children.length;i++){
+            if(root.children[i] != null){
+                findPrefix(root.children[i], ans + (char)(i + 'a'));
+            }
         }
-        findPrefix(word, ans + word.charAt(idx), idx + 1);
+
+
     }
 
     public static void main(String[] args) {
@@ -54,8 +58,7 @@ public class PrefixProblem {
         }
 
         root.freq = -1; // Set the frequency of the root to -1 to avoid counting it as a prefix.
-        
-
+        findPrefix(root, ""); // Find and print the shortest unique prefix for each word.
     }
 
 }
