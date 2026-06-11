@@ -32,7 +32,7 @@ public class PrefixProblem {
         curr.eow = true;
     }
 
-    public static void findPrefix(Node root, String ans) {
+    public static void findPrefix(Node root, String ans) { // O(N) where N is the number of nodes in the Trie.
         if(root == null){
             return;
         }
@@ -45,7 +45,6 @@ public class PrefixProblem {
                 findPrefix(root.children[i], ans + (char)(i + 'a'));
             }
         }
-
 
     }
 
