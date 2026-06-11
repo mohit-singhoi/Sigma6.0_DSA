@@ -62,10 +62,10 @@ public class StartWithPrefix {
         insert("heaven");
         insert("goodbye");
 
-        System.out.println(startsWithPrefix("he")); // true
-        System.out.println(startsWithPrefix("hell")); // true
-        System.out.println(startsWithPrefix("good")); // true
-        System.out.println(startsWithPrefix("bye")); // false
+        System.out.println("Starts with 'he': " + startsWithPrefix("he")); // true
+        System.out.println("Starts with 'hell': " + startsWithPrefix("hell")); // true
+        System.out.println("Starts with 'good': " + startsWithPrefix("good")); // true
+        System.out.println("Starts with 'bye': " + startsWithPrefix("bye")); // false
     }
     
 }
