@@ -57,15 +57,29 @@ public class StartWithPrefix {
     }
 
     public static void main(String[] args) {
-        insert("hello");
-        insert("hell");
-        insert("heaven");
-        insert("goodbye");
+        String words[] = {"apple","app","mango","man","woman"};
+        // insert("hello"); // 
+        // insert("hell");
+        // insert("heaven");
+        // insert("goodbye");
 
-        System.out.println("Starts with 'he': " + startsWithPrefix("he")); // true
-        System.out.println("Starts with 'hell': " + startsWithPrefix("hell")); // true
-        System.out.println("Starts with 'good': " + startsWithPrefix("good")); // true
-        System.out.println("Starts with 'bye': " + startsWithPrefix("bye")); // false
+        for(int i=0;i<words.length;i++){
+            insert(words[i]);
+        }
+
+        String prefix1 = "app";
+        String prefix2 = "hell";
+        String prefix3 = "mango";
+        String prefix4 = "bye";
+        // System.out.println("Starts with 'he': " + startsWithPrefix("he")); // true
+        // System.out.println("Starts with 'hell': " + startsWithPrefix("hell")); // true
+        // System.out.println("Starts with 'good': " + startsWithPrefix("good")); // true
+        // System.out.println("Starts with 'bye': " + startsWithPrefix("bye")); // false
+
+        System.out.println("Starts with '" + prefix1 + "': " + startsWithPrefix(prefix1)); // true
+        System.out.println("Starts with '" + prefix2 + "': " + startsWithPrefix(prefix2)); // false
+        System.out.println("Starts with '" + prefix3 + "': " + startsWithPrefix(prefix3)); // true
+        System.out.println("Starts with '" + prefix4 + "': " + startsWithPrefix(prefix4)); // false
     }
     
 }
