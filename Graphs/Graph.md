@@ -1,5 +1,3 @@
-# Graph in Data Structures
-
 ## What is a Graph?
 
 A **Graph** is a non-linear data structure consisting of a set of **vertices (nodes)** and **edges** that connect pairs of vertices.
