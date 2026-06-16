@@ -48,6 +48,16 @@ public class BFSGraph {
 
     }
 
+    // BFS traversal of the graph
+    public static void bfs(ArrayList<Edge>[] graph){
+        boolean[] visited = new boolean[graph.length];
+        for(int i = 0;i<graph.length;i++){
+            if(!visited[i]){
+                bfsUtil(graph, visited);
+            }
+        }
+    }
+
     // Main method to perform BFS traversal
     public static void main(String[] args) {
 
