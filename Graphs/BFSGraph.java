@@ -84,6 +84,7 @@ public class BFSGraph {
         int V = 7; // Number of vertices
         ArrayList<Edge>[] graph = new ArrayList[V];
         createGraph(graph);
+        System.out.println("BFS Traversal of the graph: ");
         bfs(graph);
     }
     
