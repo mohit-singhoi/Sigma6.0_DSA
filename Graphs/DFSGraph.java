@@ -48,28 +48,24 @@ public class DFSGraph {
 
     }
 
-    // BFS traversal of the graph
-    public static void bfs(ArrayList<Edge>[] graph){ // O(V + E)
-        Queue<Integer> q = new LinkedList<>();
-        boolean[] visited = new boolean[graph.length];
-        q.add(0); // Starting BFS from vertex 0
-        while(!q.isEmpty()){
-            // int curr = q.poll();
-            int curr = q.remove(); 
-            if(!visited[curr]){ // Check if the current vertex has not been visited
-                System.out.print(curr + " ");
-                visited[curr] = true;
-                for(int i = 0;i<graph[curr].size();i++){
-                    Edge e = graph[curr].get(i);
-                    q.add(e.dest);
-                }
+    // DFS traversal of the graph
+    public static void dfs(ArrayList<Edge>[] graph, int curr, boolean[] visited){ // O(V + E)
+        // Visisit
+        System.out.print(curr + " ");
+        // Mark the current vertex as visited
+        visited[curr] = true;
+
+        // Explore the neighbors of the current vertex
+        for(int i = 0;i<graph[curr].size();i++){
+            Edge e = graph[curr].get(i);
+            if(!visited[e.dest]){ // Check if the neighbor vertex has not been visited
+                dfs(graph, e.dest, visited); // Recursively visit the neighbor vertex
             }
         }
 
-
     }
 
-    // Main method to perform BFS traversal
+    // Main method to perform DFS traversal
     public static void main(String[] args) {
 
         /*
@@ -84,8 +80,9 @@ public class DFSGraph {
         int V = 7; // Number of vertices
         ArrayList<Edge>[] graph = new ArrayList[V];
         createGraph(graph);
-        System.out.println("BFS Traversal of the graph: ");
-        bfs(graph);
+        System.out.println("DFS Traversal of the graph: ");
+        boolean[] visited = new boolean[graph.length];
+        dfs(graph, 0, visited);
     }
     
 }
