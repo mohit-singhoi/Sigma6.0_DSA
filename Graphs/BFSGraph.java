@@ -50,12 +50,23 @@ public class BFSGraph {
 
     // BFS traversal of the graph
     public static void bfs(ArrayList<Edge>[] graph){
+        Queue<Integer> q = new LinkedList<>();
         boolean[] visited = new boolean[graph.length];
-        for(int i = 0;i<graph.length;i++){
-            if(!visited[i]){
-                bfsUtil(graph, visited);
+        q.add(0); // Starting BFS from vertex 0
+        while(!q.isEmpty()){
+            // int curr = q.poll();
+            int curr = q.remove(); 
+            if(!visited[curr]){ // Check if the current vertex has not been visited
+                System.out.print(curr + " ");
+                visited[curr] = true;
+                for(int i = 0;i<graph[curr].size();i++){
+                    Edge e = graph[curr].get(i);
+                    q.add(e.dest);
+                }
             }
         }
+
+
     }
 
     // Main method to perform BFS traversal
@@ -73,6 +84,7 @@ public class BFSGraph {
         int V = 7; // Number of vertices
         ArrayList<Edge>[] graph = new ArrayList[V];
         createGraph(graph);
+        bfs(graph);
     }
     
 }
