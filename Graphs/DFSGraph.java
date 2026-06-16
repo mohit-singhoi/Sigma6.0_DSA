@@ -82,7 +82,8 @@ public class DFSGraph {
         createGraph(graph);
         System.out.println("DFS Traversal of the graph: ");
         boolean[] visited = new boolean[graph.length];
-        dfs(graph, 0, visited);
+       // dfs(graph, 0, visited);
+       dfs(graph, 0, new boolean[graph.length]);
     }
     
 }
