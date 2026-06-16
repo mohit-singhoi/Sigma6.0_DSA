@@ -1,7 +1,7 @@
 // Breadth First Search (BFS) implementation for a graph
 import java.util.*;
 
-public class BFSGraph {
+public class DFSGraph {
 
     static class Edge {
         int src;
