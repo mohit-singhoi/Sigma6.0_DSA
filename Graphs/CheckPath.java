@@ -50,7 +50,7 @@ public class CheckPath {
 
 
     //Check Path between source and destination
-    public static boolean checkPath(ArrayList<Edge>[] graph, int src, int dest, boolean[] visited){
+    public static boolean checkPath(ArrayList<Edge>[] graph, int src, int dest, boolean[] visited){ // O(V + E)
         if(src == dest){
             return true;
         }
