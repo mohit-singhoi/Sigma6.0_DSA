@@ -17,12 +17,12 @@ public class CycleDetection {
 
     // Detect cycle
     public static boolean isCycle(ArrayList<Edge>[] graph){
-        boolean visisted[] = new boolean[graph.length];
+        boolean visited[] = new boolean[graph.length];
         boolean stack[] = new boolean[graph.length];
 
         for(int i =0; i<graph.length;i++){
-            if(!visisted[i]){
-                if(isCycleUtil(graph, i, visited , stack)){
+            if(!visited[i]){
+                if(isCycleUtil(graph, i, visited, stack)){
                     return true;
                 }
             }
@@ -45,6 +45,9 @@ public class CycleDetection {
                 return true;
             }
         }
+
+        stack[curr] = false;
+        return false;
      }
 
     static void createGraph(ArrayList<Edge> graph[]) { // FALSE -- No cycle exits in this graph
@@ -65,5 +68,6 @@ public class CycleDetection {
         int V = 44;
         ArrayList<Edge> graph[] = new ArrayList[V];
         createGraph(graph);
+        System.out.println("Is Cycle Exists in this Graph ? : " + isCycle(graph));
     }
 }
