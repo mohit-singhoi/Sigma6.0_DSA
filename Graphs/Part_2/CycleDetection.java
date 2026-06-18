@@ -56,36 +56,35 @@ public class CycleDetection {
         return false;
     }
 
-    // // Graph 1 : Return true
-    // static void createGraph(ArrayList<Edge> graph[]) { // FALSE -- No cycle exits
-    // in this graph
-    // for (int i = 0; i < graph.length; i++) {
-    // graph[i] = new ArrayList<>();
-    // }
-
-    // graph[0].add(new Edge(0,2));
-
-    // graph[1].add(new Edge(1,0));
-
-    // graph[2].add(new Edge(2,3));
-
-    // graph[3].add(new Edge(3,0));
-    // }
-
-    // Graph 2 : Return false
+    // Graph 1 : Return true
     static void createGraph(ArrayList<Edge> graph[]) { // FALSE -- No cycle exits in this graph
-        for (int i = 0; i < graph.length; i++) {
-            graph[i] = new ArrayList<>();
-        }
-
-        graph[0].add(new Edge(0, 1));
-        graph[0].add(new Edge(0, 2));
-
-        graph[1].add(new Edge(1, 3));
-
-        graph[2].add(new Edge(2, 3));
-
+    for (int i = 0; i < graph.length; i++) {
+    graph[i] = new ArrayList<>();
     }
+
+    graph[0].add(new Edge(0,2));
+
+    graph[1].add(new Edge(1,0));
+
+    graph[2].add(new Edge(2,3));
+
+    graph[3].add(new Edge(3,0));
+    }
+
+    // // Graph 2 : Return false
+    // static void createGraph(ArrayList<Edge> graph[]) { // FALSE -- No cycle exits in this graph
+    //     for (int i = 0; i < graph.length; i++) {
+    //         graph[i] = new ArrayList<>();
+    //     }
+
+    //     graph[0].add(new Edge(0, 1));
+    //     graph[0].add(new Edge(0, 2));
+
+    //     graph[1].add(new Edge(1, 3));
+
+    //     graph[2].add(new Edge(2, 3));
+
+    // }
 
     public static void main(String[] args) {
         int V = 4;
