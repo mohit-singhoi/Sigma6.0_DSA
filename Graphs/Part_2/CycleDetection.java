@@ -1,6 +1,6 @@
 // Cycle detection Problem in Directed Graph
 
-import java.util.ArrayList;
+import java.util.*;
 
 public class CycleDetection {
 
