@@ -39,7 +39,9 @@ public class TopologicalSorting {
     }
 
     public static void main(String[] args) {
-        
+        int V = 6;
+        ArrayList<Edge> graph[] = new ArrayList<>(V);
+        createGraph(graph);
     }
 
     
