@@ -1,6 +1,7 @@
 // Multiple Connected Components Problem in a graph
 
 // Breadth First Search (BFS) implementation for a graph
+
 import java.util.*;
 
 public class MComponenets {
