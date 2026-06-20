@@ -1,7 +1,7 @@
 // Topological Sorting is a linear ordering of the vertices in a Directed Acyclic Graph (DAG)
 //  such that for every directed edge u → v, vertex u appears before v in the ordering.
 
-import java.util.ArrayList;
+import java.util.*;
 
 public class TopologicalSorting {
 
@@ -35,7 +35,14 @@ public class TopologicalSorting {
     }
 
     public static void topSort(ArrayList<Edge>[] graph){
+        boolean Visited[] = new boolean[graph.length];
+        Stack<Integer> s = new Stack<>();
 
+        for(int i =0;i<graph.length;i++){
+            if(!Visited[i]){
+                topSortUtil(); // modified DFS
+            }
+        }
     }
 
     public static void main(String[] args) {
