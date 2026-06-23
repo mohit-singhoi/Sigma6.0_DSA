@@ -110,8 +110,8 @@ public class Qns_01 {
 
 
         if(detectCycle(graph,V))
-            System.out.println("Yes");
+            System.out.println("Detect Cycle ");
         else
-            System.out.println("No");
+            System.out.println("No Detect any Cycle");
     }
 }
