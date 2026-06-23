@@ -146,6 +146,7 @@ public class Qns_04 {
         };
 
 
+        System.out.print("Size of largest Region is : ");
         System.out.println(largestRegion(mat));
 
     }
