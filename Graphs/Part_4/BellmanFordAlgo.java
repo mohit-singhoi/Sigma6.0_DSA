@@ -16,7 +16,7 @@ public class BellmanFordAlgo {
         }
     }
 
-    // Create Graph
+    // Create Graph 1
     static void createGraph(ArrayList<Edge>[] graph) {
 
         for (int i = 0; i < graph.length; i++) {
@@ -33,6 +33,20 @@ public class BellmanFordAlgo {
         graph[3].add(new Edge(3,4,4));
     }
 
+    // Create Graph 2
+    static void createGraph(ArrayList<Edge> graph) {
+
+
+        graph.add(new Edge(0,1,2));
+        graph.add(new Edge(0,2,4));
+
+        graph.add(new Edge(1,2,-4));
+
+        graph.add(new Edge(2,3,2));
+
+        graph.add(new Edge(3,4,4));
+    }
+
 
     public static void bellmanFord(ArrayList<Edge> graph[], int src){
 
@@ -45,8 +59,10 @@ public class BellmanFordAlgo {
         }
 
         int V = graph.length;
+        //O(v*E)
 
 
+        //algo - O(v)
         // Bellman Ford runs V-1 times
         for(int i = 0; i < V-1; i++){
 
