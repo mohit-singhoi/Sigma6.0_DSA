@@ -56,12 +56,31 @@ public class PrimsAlgorithm {
     public static void prims(ArrayList<Edge> graph[]){
         boolean vis[] = new boolean[graph.length];
         PriorityQueue<Pair> pq = new PriorityQueue<>();
+        pq.add(new Pair(0,0));
+        int finalCost = 0; // MST Cost/Total min wt.
+
+        while(!pq.isEmpty()){
+            Pair curr = pq.remove();
+            if(!vis[curr.v]){
+                vis[curr.v] = true;
+                finalCost += curr.cost;
+
+                for(int i = 0;i<graph[curr.v].size();i++){
+                    Edge e = graph[curr.v].get(i);
+                    pq.add(new Pair(e.dest, e.wt));
+                }
+
+            }
+        }
+
+        System.out.println("Final Cost of MSt = " +finalCost);
     }
 
     public static void main(String args[]){
         int V = 4;
         ArrayList<Edge> graph[] = new ArrayList[V];
         createGraph(graph);
+        prims(graph);
     }
 
 
