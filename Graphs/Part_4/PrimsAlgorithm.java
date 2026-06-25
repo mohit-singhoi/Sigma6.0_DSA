@@ -38,7 +38,7 @@ public class PrimsAlgorithm {
         graph[3].add(new Edge(3,2,50));
     }
 
-    static class Pair{
+    static class Pair implements Comparable<Pair>{
         int v;
         int cost;
 
