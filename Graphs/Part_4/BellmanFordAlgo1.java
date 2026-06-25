@@ -45,14 +45,14 @@ public class BellmanFordAlgo1 {
         }
 
 
+        //O(VE)
         // Relax all edges V-1 times
         for(int i = 0; i < V-1; i++) {
 
-
+            //edges - O(E)
             for(int j = 0; j < graph.size(); j++) {
-
-
                 Edge e = graph.get(j);
+                //u, v , wt
 
                 int u = e.src;
                 int v = e.dest;
