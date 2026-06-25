@@ -53,6 +53,7 @@ public class PrimsAlgorithm {
         }
     }
 
+    //O(ElogE)
     public static void prims(ArrayList<Edge> graph[]){
         boolean vis[] = new boolean[graph.length];
         PriorityQueue<Pair> pq = new PriorityQueue<>();
