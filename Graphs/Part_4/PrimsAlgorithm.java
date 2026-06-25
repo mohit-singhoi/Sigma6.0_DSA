@@ -1,8 +1,9 @@
 // Find MST using Prism Algorithm.
 
 import java.util.ArrayList;
+import java.util.PriorityQueue;
 
-public class PrismAlgorithm {
+public class PrimsAlgorithm {
 
      static class Edge {
         int src;
@@ -37,6 +38,32 @@ public class PrismAlgorithm {
         graph[3].add(new Edge(3,2,50));
     }
 
-    
+    static class Pair{
+        int v;
+        int cost;
+
+        public Pair(int v, int c){
+            this.v = v;
+            this.cost = c;
+        }
+
+        @Override
+        public int compareTo(Pair p2){
+            return this.cost - p2.cost;
+        }
+    }
+
+    public static void prims(ArrayList<Edge> graph[]){
+        boolean vis[] = new boolean[graph.length];
+        PriorityQueue<Pair> pq = new PriorityQueue<>();
+    }
+
+    public static void main(String args[]){
+        int V = 4;
+        ArrayList<Edge> graph[] = new ArrayList[V];
+        createGraph(graph);
+    }
+
+
     
 }
