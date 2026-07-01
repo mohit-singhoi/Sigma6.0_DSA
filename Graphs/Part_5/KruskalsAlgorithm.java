@@ -55,7 +55,8 @@ public class KruskalsAlgorithm {
         }
     }
 
-    static void kruskal(ArrayList<Edge> edges, int V) {
+    // Kruskal's Algorithm : O(V+ElogE) where V is the number of vertices and E is the number of edges
+    static void kruskal(ArrayList<Edge> edges, int V) { 
 
         Collections.sort(edges);
 
