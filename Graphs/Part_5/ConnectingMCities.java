@@ -52,6 +52,8 @@ public class ConnectingMCities {
         {2,5,0,6,0},
         {3,0,6,0,0},
         {4,7,0,0,0}};
+
+        System.out.print("Minimum cost to connect all cities = ");
         System.out.println(connectCities(cities));
     }
     
