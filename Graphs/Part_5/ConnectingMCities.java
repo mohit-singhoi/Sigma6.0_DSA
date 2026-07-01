@@ -46,7 +46,7 @@ public class ConnectingMCities {
 
 
 
-    public static void main(String[] args) {
+    public static void main(String[] args) { // O(ElogV) where E is the number of edges and V is the number of vertices
         int cities[][] = {{0,1,2,3,4},
         {1,0,5,0,7},
         {2,5,0,6,0},
