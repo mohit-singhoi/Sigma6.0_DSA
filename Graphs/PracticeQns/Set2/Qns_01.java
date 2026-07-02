@@ -3,7 +3,7 @@
 
 import java.util.ArrayList;
 
-public class MotherVertex {
+public class Qns_01 {
 
     // Function to add an edge
     static void addEdge(ArrayList<ArrayList<Integer>> graph, int u, int v) {
