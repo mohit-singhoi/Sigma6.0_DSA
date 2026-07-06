@@ -1,19 +1,24 @@
-public class Fibonacci {
+// Fibonacci using recursion
 
-    public static int  fib(int n, int f[]){ // 0 1 1 2 3
+import java.util.Scanner;
+
+public class Fibonacci {
+     
+    public static int fib(int n){ // O(2^n)
         if(n == 0 || n == 1){
             return n;
         }
-        if(f[n] != 0){ // fib(n) is already calculated
-            return f[n];
-        }
-        f[n] = fib(n-1, f) + fib(n-2, f);
-        return f[n];
+        return fib(n-1)+fib(n-2);
     }
     public static void main(String[] args){
-        int n = 6;
-        int f[] = new int[n+1];
-        System.out.println("Fibonacci Series of " + n + " is: " + fib(n, f));
+        int n;
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.print("Enter the Number : ");
+        n = sc.nextInt();
+
+        System.out.println("Fibonacci of : " + n + " is : " +fib(n));
 
     }
+    
 }
