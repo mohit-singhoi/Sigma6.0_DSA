@@ -1,14 +1,19 @@
 public class Fibonacci {
 
-    public static int  fib(int n){ // 0 1 1 2 3
+    public static int  fib(int n, int f[]){ // 0 1 1 2 3
         if(n == 0 || n == 1){
             return n;
         }
-        return fib(n-1) +fib(n-2);
+        if(f[n] != 0){ // fib(n) is already calculated
+            return f[n];
+        }
+        f[n] = fib(n-1, f) + fib(n-2, f);
+        return f[n];
     }
     public static void main(String[] args){
-        int n = 5;
-        System.out.println(fib(n));
+        int n = 6;
+        int f[] = new int[n+1];
+        System.out.println("Fibonacci Series of " + n + " is: " + fib(n, f));
 
     }
 }
