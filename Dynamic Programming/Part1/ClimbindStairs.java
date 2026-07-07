@@ -3,5 +3,9 @@
 // Fibonacci Code Approach
 
 public class ClimbindStairs {
+
+    public static void main(String[] args){
+        
+    }
     
 }
