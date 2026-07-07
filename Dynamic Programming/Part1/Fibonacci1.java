@@ -1,4 +1,4 @@
-// Fibonacci using DP(Dynamic Programming)
+// Fibonacci using DP(Dynamic Programming Memoization)
 public class Fibonacci1 {
 
     // O(n)
