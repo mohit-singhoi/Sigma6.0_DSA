@@ -1,10 +1,11 @@
 // Climbing Stairs Problem
+// Using Normal Recursion
 // Count ways to reach the nth stair. The person can climb either 1 stairs at time.
 // Fibonacci Code Approach
 
 import java.util.Scanner;
 public class ClimbindStairs {
-    public static int countWays(int n){
+    public static int countWays(int n){ //O
         if( n == 0){
             return 1;
         }
