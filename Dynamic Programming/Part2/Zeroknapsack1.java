@@ -5,6 +5,30 @@
 // ans = max Profit
 public class Zeroknapsack1 {
 
+        public static int kanpsack(int val[], int wt[], int W, int n, int dp[][]) {
+        if (W == 0 || n == 0) {
+            return 0;
+        }
+
+        if(dp[n][W] != -1){
+            return dp[n][W];
+        }
+
+        if (wt[n - 1] <= W) { // valid
+            // include
+            int ans1 = val[n - 1] + kanpsack(val, wt, W - wt[n - 1], n - 1,dp);
+            // exclude
+            int ans2 = kanpsack(val, wt, W, n - 1,dp);
+            dp[n][W] = Math.max(ans1, ans2);
+            return dp[n][W];
+
+        } else{ // not valid
+            dp[n][W] =  kanpsack(val, wt, W, n-1,dp);
+            return dp[n][W];
+
+        }
+    }
+
 
 
     public static void main(String[] args) {
