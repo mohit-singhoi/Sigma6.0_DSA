@@ -3,7 +3,7 @@
 import java.util.*;
 public class ClimbingStairs1 {
 
-    public static int countWays(int n, int ways[]){
+    public static int countWays(int n, int ways[]){ // O(n)
         if(n == 0){
             return 1;
 
