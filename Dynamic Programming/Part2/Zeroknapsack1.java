@@ -4,7 +4,7 @@
 // W(total allowed weight) = 7
 // ans = max Profit
 public class Zeroknapsack1 {
-
+    // O(n * W)
         public static int kanpsack(int val[], int wt[], int W, int n, int dp[][]) {
         if (W == 0 || n == 0) {
             return 0;
