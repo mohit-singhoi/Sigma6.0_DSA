@@ -51,6 +51,7 @@ public class ZeroOneKnapsack2 {
         int W = 7;
 
         System.out.println("Max Profit : " + knapsackTab(val, wt, W));
+        
     }
 
 }
