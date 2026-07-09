@@ -3,7 +3,7 @@
 // wt[] = 2, 5, 1, 3, 4
 // W(total allowed weight) = 7
 // ans = max Profit
-public class ZeroKnapsack {
+public class ZeroOneKnapsack {
 
     // O(2^n)
     public static int kanpsack(int val[], int wt[], int W, int n) {
