@@ -32,8 +32,8 @@ public class CoinChangeProblem {
     }
 
     public static void main(String[] args){
-        int val[] = {1,2,3};
-        int sum = 4; // ans = 4
+        int val[] = {2,5,3,6};
+        int sum = 10; // ans = 5
 
         System.out.println("Total Ways : " +coinChange(val, sum));
     }
