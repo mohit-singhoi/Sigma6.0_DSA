@@ -1,4 +1,4 @@
-// Longest Common Sequence (LCS) using recursion
+// LCS Problem using Memoization
 
 // A subsequence of a string is a new string generated from the original string with some character(can be none) deleted without changing the relative order of the remaining characters.
 // str1 = "abcde" , str2 = "ace"
@@ -7,12 +7,17 @@
 // str1 = "abcdge", str2 ="abedg"
 // ans = 4 //"abdg"
 
-public class LCS {
+
+public class LCS1 {
 
     // O(2^n)
-    public static int lcs(String str1, String str2, int n, int m) {
+    public static int lcs(String str1, String str2, int n, int m, int dp[][]) {
         if (n == 0 || m == 0) {
             return 0;
+        }
+
+        if(dp[n][m] != -1){
+            return dp[n][m];
         }
         if (str1.charAt(n - 1) == str2.charAt(m - 1)) { // same
             return lcs(str1, str2, n - 1, m) + 1;
@@ -27,6 +32,17 @@ public class LCS {
         String str1 = "abcdge";
         String str2 = "abedg"; // lcs = "abdg"; length = 4
 
+        int n = str1.length();
+        int m = str2.length();
+
+        int dp[][] = new int[n+1][m+1];
+        //initialization
+            for(int i =0;i<n+1;i++){
+                for(int j =0;j<m+1;j++){
+                    dp[i][j] = -1;
+                }
+            }
+        ][]
         System.out.println("LCS : " +lcs(str1,str2,str1.length(),str2.length()));
     }
 
