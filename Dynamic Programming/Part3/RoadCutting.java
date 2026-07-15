@@ -20,7 +20,21 @@ public class RoadCutting {
 
         }
 
-        
+        for(int i =1;i<n+1;i++){
+            for(int j =1;j<totRod;j++){
+                //valid
+                if(length[i-1] <=j){
+                    dp[i][j] = Math.max(price[i-1] + dp[i][j-length[i-1]], dp[i-1][j]);
+
+                } else { // invalid
+                    dp[i][j] = dp[i-1][j];
+
+                }
+            }
+        }
+        return dp[n][totRod];
     }
+
+    
     
 }
