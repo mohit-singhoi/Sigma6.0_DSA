@@ -9,6 +9,7 @@
 
 public class LCS2 {
 
+    //O(n*m)
     public static int lcsTab(String str1, String str2) {
         int n = str1.length();
         int m = str2.length();
