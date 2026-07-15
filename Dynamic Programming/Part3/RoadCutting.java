@@ -6,5 +6,21 @@
 // price = 1, 5, 8, 9, 10, 17, 17, 20
 // rodLength = 8
 public class RoadCutting {
+    // Weight => length; Val => price; W => totRod
+    public static int rodCutting(int length[], int price[], int totRod){
+        int n = price.length;
+        int dp[][] = new int[n+1][totRod+1];
+
+        for(int i = 0;i<n+1;i++){
+            for(int j =0;j<totRod+1;j++){
+                if(i == 0 || j == 0){
+                    dp[i][j] = 0;
+                }
+            }
+
+        }
+
+        
+    }
     
 }
