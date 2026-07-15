@@ -10,7 +10,7 @@
 
 public class LCS1 {
 
-    // O(2^n)
+    // O(m*n)
     public static int lcs(String str1, String str2, int n, int m, int dp[][]) {
         if (n == 0 || m == 0) {
             return 0;
