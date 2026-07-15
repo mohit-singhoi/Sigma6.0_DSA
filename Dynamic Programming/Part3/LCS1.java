@@ -20,10 +20,10 @@ public class LCS1 {
             return dp[n][m];
         }
         if (str1.charAt(n - 1) == str2.charAt(m - 1)) { // same
-            return lcs(str1, str2, n - 1, m) + 1;
+            return dp[n][m] =  lcs(str1, str2, n - 1, m-1,dp) + 1;
         } else { // difff
-            int ans1 = lcs(str1, str2, n - 1, m);
-            int ans2 = lcs(str1, str2, n, m - 1);
+            int ans1 = lcs(str1, str2, n - 1, m,dp);
+            int ans2 = lcs(str1, str2, n, m - 1,dp);
             return Math.max(ans1, ans2);
         }
     }
@@ -42,8 +42,8 @@ public class LCS1 {
                     dp[i][j] = -1;
                 }
             }
-        ][]
-        System.out.println("LCS : " +lcs(str1,str2,str1.length(),str2.length()));
+        
+        System.out.println("LCS : " +lcs(str1,str2,n,m,dp));
     }
 
 }
