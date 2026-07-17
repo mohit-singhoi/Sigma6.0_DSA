@@ -2,6 +2,7 @@
 
 public class EditDistanceProblem {
 
+    //O(n*m)
     public static int editDistance(String str1, String str2) {
         int n = str1.length();
         int m = str2.length();
