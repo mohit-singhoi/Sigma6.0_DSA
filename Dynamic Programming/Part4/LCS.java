@@ -3,7 +3,7 @@
 // S1 = "ABCDE" S2 = "ABGCE"
 // ans = 2 // "AB"
 public class LCS {
-    // O(n*m)
+    // TC : O(n*m)
     public static int longestCommonSubstring(String str1, String str2) {
         int n = str1.length();
         int m = str2.length();
