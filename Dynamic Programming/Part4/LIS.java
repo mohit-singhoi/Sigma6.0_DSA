@@ -5,7 +5,7 @@
 import java.util.*;
 
 public class LIS {
-
+ // TC : O(n*m)
     public static int lcs(int arr1[], int arr2[]) {
         int n = arr1.length;
         int m = arr2.length;
