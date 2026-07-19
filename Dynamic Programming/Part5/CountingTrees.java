@@ -4,6 +4,7 @@
 // ans = 5
 
 public class CountingTrees {
+    // It most similar to catalan Problem : O(n^2)
     public static int countBSt(int n){
         int dp[] = new int[n+1];
         dp[0] = 1;
