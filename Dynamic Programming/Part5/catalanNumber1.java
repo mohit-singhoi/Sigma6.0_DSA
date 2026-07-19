@@ -8,5 +8,14 @@
 //C4 = 
 
 public class CatalanNumber1 {
+    public static int catalanMem(int n, int dp[]){
+        
+    }
+
+    public static void main(String [] args){
+        int n = 4;
+        int dp[] = new int [n+1];
+        Arrays.fill(dp, -1);
+    }
     
 }
