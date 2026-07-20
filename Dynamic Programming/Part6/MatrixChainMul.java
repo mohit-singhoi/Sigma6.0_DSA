@@ -9,7 +9,7 @@ public class MatrixChainMul {
         int ans = Integer.MAX_VALUE;
         for(int k =i;k<=j-1;k++){
             int cost1 = mcm(arr, i, k); // Ai....Ak => arr[i-1] x arr[k]
-            int cost2 = mcm(arr, i+1,j); //Ai +1...Aj => arr[k] x arr[j]
+            int cost2 = mcm(arr, k+1,j); //Ai +1...Aj => arr[k] x arr[j]
             int cost3 = arr[i-1] * arr[k] * arr[j];
             int finalCost = cost1 + cost2 + cost3;
             ans = Math.min(ans, finalCost);
