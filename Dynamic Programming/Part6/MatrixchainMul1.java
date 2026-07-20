@@ -2,6 +2,7 @@
 
 import java.util.*;
 public class MatrixchainMul1 {
+    //O(n^2)
     public static int memMem(int arr[], int i, int j, int dp[][]){
         if(i == j){
             return 0;
