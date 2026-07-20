@@ -1,4 +1,4 @@
-// Mtrix chain Multiplication Problem
+// Matrix chain Multiplication Problem using recursion.
 
 public class MatrixChainMul {
     public static int mcm(int arr[], int i , int j){
