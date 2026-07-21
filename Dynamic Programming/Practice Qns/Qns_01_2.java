@@ -37,6 +37,7 @@ public class Qns_01_2 {
         int dp[] = new int[n];
         Arrays.fill(dp, -1);
 
+        System.out.print("Tribonacci Series : ");
         for (int i = 0; i < n; i++) {
             System.out.print(tribonacciMem(i, dp)+ " ");
         }

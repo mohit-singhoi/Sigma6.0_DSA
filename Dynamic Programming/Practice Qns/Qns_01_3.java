@@ -12,7 +12,27 @@ import java.util.*;
 
 public class Qns_01_3 {
     //O(n)
-    public static int tribonacciTab(int n , int dp[]){
+    public static void tribonacciTab(int n){
+        if( n == 0) return ;
+
+        int dp[] = new int[n];
+
+        dp[0] = 0;
+        if(n > 1){
+            dp[1] = 0;
+        }
+
+        if(n > 2){
+            dp[2] = 1;
+        }
+
+        for(int i = 3;i<n;i++){
+            dp[i] = dp[i-1] + dp[i-2] + dp[i-3];
+        }
+
+        for(int i = 0;i<n;i++){
+            System.out.print(dp[i] + " ");
+        }
 
     }
 
@@ -22,12 +42,9 @@ public class Qns_01_3 {
         System.out.print("Enter the Number : ");
         int n = sc.nextInt();
 
-        int dp[] = new int[n];
-        Arrays.fill(dp, -1);
+        System.out.print("Tribonacci Series : ");
+        tribonacciTab(n);
 
-        for (int i = 0; i < n; i++) {
-            System.out.print(tribonacciMem(i, dp) + " ");
-        }
 
     }
 

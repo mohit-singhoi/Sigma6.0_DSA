@@ -29,6 +29,7 @@ public class Qns_01_1 {
         System.out.print("Enter the Number : ");
         int num = sc.nextInt();
 
+        System.out.print("Tribonacci Series : ");
         for(int i = 0;i<num;i++){
             System.out.print(tribonacciRec(i)+" ");
         }
