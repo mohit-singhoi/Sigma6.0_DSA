@@ -1,4 +1,4 @@
-// Qns_01_2 : Tribonacci Numbers using tabulation
+// Qns_01_3 : Tribonacci Numbers using tabulation
 // The Tribonacci series is a generalization of the Fibonacci sequence where each term is the sum of the tree preceding terms.
 
 // Input = 5
