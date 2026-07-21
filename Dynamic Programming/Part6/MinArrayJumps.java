@@ -24,7 +24,16 @@ public class MinArrayJumps {
             }
         }
         //dp[i] -> 0 to n-1
+        print(dp);
         return dp[0];
+    }
+
+    //print dp
+    public static void print(int dp[]){
+        for(int i = 0;i<dp.length;i++){
+            System.out.print(dp[i]+ " ");
+        }
+        System.out.println();
     }
 
     public static void main(String[] args){
