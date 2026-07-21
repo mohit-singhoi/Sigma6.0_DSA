@@ -1,4 +1,4 @@
-// Qns_01 : Tribonacci Numbers using recursion
+// Qns_01_1 : Tribonacci Numbers using recursion
 // The Tribonacci series is a generalization of the Fibonacci sequence where each term is the sum of the tree preceding terms.
 // a(n) = a(n-1) + a(n-2) + a(n-3) with a(0) = a(1) = 0 , a(2) = 1
 
