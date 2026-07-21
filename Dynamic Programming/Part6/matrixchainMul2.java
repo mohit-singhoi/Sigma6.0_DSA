@@ -1,6 +1,6 @@
 // Matrix chain Multiplication Problem using Tabulation.
 
-public class matrixchainMul2 {
+public class MatrixchainMul2 {
     public static int mcmTab(int arr[]){
         int n = arr.length;
         int dp[][] = new int[n][n];
