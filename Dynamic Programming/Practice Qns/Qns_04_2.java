@@ -18,6 +18,7 @@
 
 public class Qns_04_2 {
 
+    //O(N*M)
     public static int longestPath(int[][] mat) {
 
         int n = mat.length;

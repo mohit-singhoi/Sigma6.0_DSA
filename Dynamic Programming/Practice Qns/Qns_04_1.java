@@ -19,6 +19,7 @@ import java.util.Arrays;
 
 public class Qns_04_1 {
 
+    //O(N*M)
     public static int longestPath(int[][] mat, int i, int j, int[][] dp) {
         int n = mat.length;
         int m = mat[0].length;
