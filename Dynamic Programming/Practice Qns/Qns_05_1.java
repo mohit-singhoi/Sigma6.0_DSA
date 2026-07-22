@@ -13,8 +13,9 @@
 
 // Catalan Number using Dynamic Programming (Tabulation)
 
-public class Qns_05 {
+public class Qns_05_1 {
 
+    // O(n^2)
     public static int countParenthesis(int n) {
 
         int[] dp = new int[n + 1];
