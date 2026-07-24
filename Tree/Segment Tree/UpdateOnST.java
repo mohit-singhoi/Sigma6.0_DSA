@@ -1,6 +1,8 @@
 // Segment Tree - Range Sum Query with Point Update
 
+package segmenttree;
 import java.util.*;
+
 
 public class UpdateOnST {
 
