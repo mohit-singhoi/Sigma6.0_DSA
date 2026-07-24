@@ -1,6 +1,6 @@
-// Segment Tree
+//Construct Segment Tree
 
-public class SegmentTree{
+public class ConstructST{
     static int tree[];
 
     public static void init(int n){
@@ -8,6 +8,7 @@ public class SegmentTree{
 
     }
 
+    //O(n)
     public static int buildST(int arr[], int i, int start, int end){
         if(start == end){
             tree[i] = arr[start];
