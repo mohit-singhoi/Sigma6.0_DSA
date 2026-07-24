@@ -26,6 +26,7 @@ public class QueryOnST {
         return tree[i];
     }
 
+    //O(logn)
     public static int getSumUtil(int i, int si, int sj, int qi, int qj) {
         if (qj <= si || qi >= sj) { // non overlapping
             return 0;
@@ -41,7 +42,7 @@ public class QueryOnST {
 
     }
 
-    //O(logn)
+
     public static int getSum(int arr[], int qi, int qj) {
         int n = arr.length;
         return getSumUtil(0, 0, n - 1, qi, qj);
