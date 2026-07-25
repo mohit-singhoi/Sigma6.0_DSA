@@ -57,10 +57,12 @@ public class MaxEleQuery {
         if (idx < si || idx > sj) {
             return;
         }
-
-        tree[i] = Math.max(tree[i], newval);
+        if(si == sj){
+            tree[i] = newval;
+        }
 
         if (si != sj) {
+            tree[i] = Math.max(tree[i], newval);
             int mid = (si + sj) / 2;
             updateUtil(2 * i + 1, si, mid, idx, newval); // left
             updateUtil(2 * i + 2, mid + 1, sj, idx, newval); // right
