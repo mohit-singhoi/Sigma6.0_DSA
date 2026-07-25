@@ -58,9 +58,12 @@ public class MinEleQuery {
             return;
         }
 
-        tree[i] = Math.min(tree[i], newval);
+        if(si == sj){
+            tree[i] = newval;
+        }
 
         if (si != sj) {
+            tree[i] = Math.min(tree[i], newval);
             int mid = (si + sj) / 2;
             updateUtil(2 * i + 1, si, mid, idx, newval); // left
             updateUtil(2 * i + 2, mid + 1, sj, idx, newval); // right
@@ -68,7 +71,7 @@ public class MinEleQuery {
         }
 
     }
-
+    
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int arr[] = { 6, 8, -1, 2, 17, 1, 3, 2, 4 };
