@@ -85,12 +85,12 @@ public class MinEleQuery {
         int qj = sc.nextInt();
 
         int max = getMin(arr, qi, qj);
-        System.out.println("Max Element between range between  " + qi + " to " + qj + " is : " + max); // 17
+        System.out.println("Min Element between range between  " + qi + " to " + qj + " is : " + max); // 17
 
         update(arr, 2, 20);
 
         max = getMin(arr, qi, qj);
-        System.out.println("After updation Max Element between range between  " + qi + " to " + qj + " is : " + max); // 20
+        System.out.println("After updation Min Element between range between  " + qi + " to " + qj + " is : " + max); // 20
     }
 
 }
