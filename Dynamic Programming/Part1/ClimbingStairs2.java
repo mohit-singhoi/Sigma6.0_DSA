@@ -4,7 +4,8 @@ import java.util.Arrays;
 
 public class ClimbingStairs2 {
 
-    public static int countWaysTab(int n){
+    // Tabulation // O(n)
+    public static int countWaysTab(int n){ 
         if(n <= 1) return 1;
         int dp[] = new int[n+1];
         dp[0] = 1;

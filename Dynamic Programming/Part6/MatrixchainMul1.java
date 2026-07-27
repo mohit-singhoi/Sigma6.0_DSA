@@ -3,7 +3,7 @@
 import java.util.*;
 public class MatrixchainMul1 {
     //O(n^2)
-    public static int memMem(int arr[], int i, int j, int dp[][]){
+    public static int mcmMem(int arr[], int i, int j, int dp[][]){
         if(i == j){
             return 0;
         }
@@ -13,8 +13,8 @@ public class MatrixchainMul1 {
 
         int ans = Integer.MAX_VALUE;
         for(int k =i;k<=j-1;k++){
-            int cost1 = memMem(arr, i, k,dp);
-            int cost2 = memMem(arr, k+1,j, dp);
+            int cost1 = mcmMem(arr, i, k,dp);
+            int cost2 = mcmMem(arr, k+1,j, dp);
             int cost3 = arr[i-1] * arr[k] * arr[j];
             ans = Math.min(ans, cost1 + cost2 + cost3);
         }
@@ -30,6 +30,6 @@ public class MatrixchainMul1 {
         for(int i = 0;i<n;i++){
             Arrays.fill(dp[i], -1);
         }
-        System.out.println("MCM : " + memMem(arr, 1, n-1,dp));
+        System.out.println("MCM : " + mcmMem(arr, 1, n-1,dp));
     }
 }
