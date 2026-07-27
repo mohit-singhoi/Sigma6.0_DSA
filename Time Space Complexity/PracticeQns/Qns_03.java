@@ -17,7 +17,7 @@ public class Qns_03 {
     }
 
     // Main fun
-    public static void main(String[] args) {
+    public static void main(String[] args) { // TC = O(√n) , Sc = O(1)
         int x = 11;
         System.out.println(floorSqrt(x));
     }    
