@@ -2,7 +2,7 @@
 
 import java.util.PriorityQueue;
 
-public class ConnectingMCities {
+public class ConnectingCitiesMCost {
     static class Edge implements Comparable<Edge>{
         int dest;
         int cost;

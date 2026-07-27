@@ -50,9 +50,9 @@ public class TopologicalSorting {
 
     // DFS Utility Function
     public static void topSortUtil(ArrayList<Edge>[] graph,
-                                   int curr,
-                                   boolean[] visited,
-                                   Stack<Integer> stack) {
+            int curr,
+            boolean[] visited,
+            Stack<Integer> stack) {
 
         visited[curr] = true;
 
