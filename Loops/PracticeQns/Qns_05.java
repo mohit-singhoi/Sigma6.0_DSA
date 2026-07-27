@@ -1,4 +1,4 @@
-package Loops;
+package Loops.PracticeQns;
 
 public class Qns_05 {
     public static void main(String[] args) {
