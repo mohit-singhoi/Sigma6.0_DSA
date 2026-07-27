@@ -9,7 +9,7 @@ This folder contains the official certificate earned after successfully completi
 # 📜 Certificate
 
 <p align="center">
-  <img src="Sigma%206.0%20DSA.png" alt="Sigma 6.0 Certificate" width="800"/>
+  <img src="Sigma6.0_DSA" alt="Sigma 6.0 Certificate" width="800"/>
 </p>
 
 > **Certificate of Completion**  
