@@ -4,8 +4,10 @@
 
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
 ![DSA](https://img.shields.io/badge/Data%20Structures%20%26%20Algorithms-blue?style=for-the-badge)
-![GitHub](https://img.shields.io/badge/GitHub-Repository-black?style=for-the-badge&logo=github)
-![Status](https://img.shields.io/badge/Status-Completed-success?style=for-the-badge)
+![GitHub stars](https://img.shields.io/github/stars/mohit-singhoi/JAVA-DSA-SIGMA-6.0?style=for-the-badge)
+![GitHub forks](https://img.shields.io/github/forks/mohit-singhoi/JAVA-DSA-SIGMA-6.0?style=for-the-badge)
+![Visitors](https://komarev.com/ghpvc/?username=mohit-singhoi&repo=JAVA-DSA-SIGMA-6.0&style=for-the-badge)
+![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 
 ---
 
