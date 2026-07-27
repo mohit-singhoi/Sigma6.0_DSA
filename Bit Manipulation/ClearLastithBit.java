@@ -11,3 +11,4 @@ public class ClearLastithBit {
         System.out.println("Number after clearing last " + i + " bits is: " + clearLastIthBit(n, i));
     }
 }
+
