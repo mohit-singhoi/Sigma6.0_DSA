@@ -7,7 +7,44 @@ public class MajorityEle {
     //O(n^2)-> This is a worst case Approach TC is very high
     public static int findMajorityElement(int nums[]){
         int n = nums.length;
+        for(int val : nums){
+            int freq = 0;
+            for(int el : nums){
+                if( el == val){
+                    freq++;
+                }
+            }
+            if(freq > n/2){
+                return val;
+            }
+        }
+        return -1;
 
+    }
+
+    //2nd Approach -> It is a better from previous approach
+    //O(nlogn)
+    public static int findMajorityElement1(int nums[]){
+        int n = nums.length;
+
+        //sort array
+        Arrays.sort(nums);
+
+        //freq count
+        int freq =1;
+        int  ans = nums[0];
+        for(int i = 1;i<n;i++){
+            if(nums[i] == nums[i-1]){
+                freq++;
+            } else{
+                freq =1;
+                ans = nums[i];
+            }
+            if(freq > n/2){
+                return ans;
+            }
+        }
+        return ans;
     }
 
     //3nd Approach
@@ -30,7 +67,11 @@ public class MajorityEle {
     }
     public static void main(String[] args){
         int nums[] = {2,2,1,1,1,2,2};
-        System.out.println("Majority Element : "+findMajorityElement2(nums));
+        int nums1[] = {3,2,3};
+        int nums2[] = {3,3,4,2,4,4,2,4};
+        System.out.println("Majority Element 1st : "+findMajorityElement(nums));
+        System.out.println("Majority Element 2nd : "+findMajorityElement1(nums1));
+        System.out.println("Majority Element 3rd : "+findMajorityElement2(nums2));
         
 
     }
