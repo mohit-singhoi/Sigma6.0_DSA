@@ -2,6 +2,7 @@
 
 import java.util.*;
 public class MajorityEle {
+    //O(n) -> This is a best approach for finding majority element in the given array
     public static int findMajorityElement(int nums[]){
         int n = nums.length;
         int freq = 0, ans = 0;
