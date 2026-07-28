@@ -2,8 +2,17 @@
 
 import java.util.*;
 public class MajorityEle {
-    //O(n) -> This is a best approach for finding majority element in the given array
+
+    //1st Approach
+    //O(n^2)-> This is a worst case Approach TC is very high
     public static int findMajorityElement(int nums[]){
+        int n = nums.length;
+
+    }
+
+    //3nd Approach
+    //O(n) -> This is a best approach for finding majority element in the given array
+    public static int findMajorityElement2(int nums[]){
         int n = nums.length;
         int freq = 0, ans = 0;
 
@@ -21,7 +30,7 @@ public class MajorityEle {
     }
     public static void main(String[] args){
         int nums[] = {2,2,1,1,1,2,2};
-        System.out.println("Majority Element : "+findMajorityElement(nums));
+        System.out.println("Majority Element : "+findMajorityElement2(nums));
         
 
     }
