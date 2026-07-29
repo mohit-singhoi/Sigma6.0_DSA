@@ -46,6 +46,7 @@ public class MajorityEle {
         }
         return ans;
     }
+    
 
     //3nd Approach
     //O(n) -> This is a best approach for finding majority element in the given array
