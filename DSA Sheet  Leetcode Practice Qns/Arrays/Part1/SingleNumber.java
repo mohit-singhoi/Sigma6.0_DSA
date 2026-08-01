@@ -12,5 +12,17 @@
 // Output: 4
 
 public class SingleNumber {
-    
+     public static int singleNumber(int[] nums) {
+           int xorResult = 0;
+
+           // XOR all elements: duplicates cancel out only single element remains
+           for (int num : nums) {
+               xorResult ^= num; // XOR operation
+           }
+           return xorResult;
+       }
+
+       public static void main(String[] args) {
+        
+       }
 }
