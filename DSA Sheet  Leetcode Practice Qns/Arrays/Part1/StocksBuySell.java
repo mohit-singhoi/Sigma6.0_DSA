@@ -16,5 +16,27 @@
 // Explanation: In this case, no transactions are done and the max profit = 0.
 
 public class StocksBuySell {
+    public static int maxProfit(int[] prices) {
+        int buy = prices[0];
+        int profit = 0;
+
+        //traverse the array
+        for(int i =1;i<prices.length;i++){
+            if(prices[i] <buy){
+                buy = prices[i];
+            }
+
+            else if(prices[i] - buy > profit){
+                profit = prices[i] - buy;
+            }
+        }
+
+        // return max profit found
+        return profit;
+    }
+
+    public static void main(String[] args) {
+        
+    }
     
 }
