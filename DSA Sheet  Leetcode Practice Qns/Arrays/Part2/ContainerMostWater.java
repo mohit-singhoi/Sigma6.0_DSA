@@ -15,5 +15,24 @@
 // Output: 1
 
 public class ContainerMostWater {
+    public int maxArea(int[] height) {
+        int n = height.length;
+        int maxWater = 0;
+        int left = 0, right = n-1; // initialize two pointer approach
+
+        // Continue until pointer meet
+        while(left < right){
+            int width = right - left;
+            int minheight = Math.min(height[left], height[right]);
+            maxWater = Math.max(maxWater, width * minheight);
+
+            if(height[left] < height[right])
+            left++;
+            else
+            right--;
+        }
+        return maxWater;
+    }
+
     
 }
