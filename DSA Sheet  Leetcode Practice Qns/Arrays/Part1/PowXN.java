@@ -1,4 +1,4 @@
-// Pow(x, n) problem LeetCode 50
+// Pow(x, n) problem LeetCode : 50
 // Implement pow(x, n), which calculates x raised to the power n (i.e., xn).
 
 // Example 1:
