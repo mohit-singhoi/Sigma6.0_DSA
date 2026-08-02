@@ -15,10 +15,32 @@
 // Explanation: 2-2 = 1/22 = 1/4 = 0.25
 
 public class PowXN {
+// Approach 1: Using built-in Math.pow function
 
 // Function to calculate x raised to the power of n
    public static double myPow(double x, int n) {
        return Math.pow(x, n);  // Use the built-in Math.pow function
+   }
+
+
+   // Approach 2
+     // Helper method for exponentiation by squaring
+   public static double helper(double x, int n) {
+       if (n == 0) return 1; // Base case: x^0 = 1
+       double temp = helper(x, n / 2); // Recursively compute x^(n/2)
+       temp *= temp; // Square the result
+       if (n % 2 != 0) temp *= x; // If odd, multiply by x
+       return temp;
+   }
+
+
+   public static  double myPow1(double x, int n) {
+       if (n < 0) {
+           long val = (long) n; // Convert to long to handle edge cases
+           double ans = helper(x, (int) -val); // Compute for positive exponent
+           return 1.0 / ans; // Return reciprocal for negative exponent
+       }
+       return helper(x, n);
    }
 
 
@@ -28,6 +50,7 @@ public class PowXN {
        double x = 2.0;  // Base value
        int n = 10;  // Exponent value
        System.out.println("Result: " + myPow(x, n));  // Print the result
+       System.out.println("Result : " +myPow1(x, n));
    }
     
     
