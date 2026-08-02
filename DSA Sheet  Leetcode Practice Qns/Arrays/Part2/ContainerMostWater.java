@@ -15,7 +15,7 @@
 // Output: 1
 
 public class ContainerMostWater {
-    public int maxArea(int[] height) {
+    public static  int maxArea(int[] height) {
         int n = height.length;
         int maxWater = 0;
         int left = 0, right = n-1; // initialize two pointer approach
@@ -34,5 +34,9 @@ public class ContainerMostWater {
         return maxWater;
     }
 
-    
+  public static void main(String[] args) {
+       int[] height = {1, 8, 6, 2, 5, 4, 8, 3, 7}; // Input array
+       int result = maxArea(height); // Call function
+       System.out.println("Maximum water that can be stored: " + result);
+   }
 }
