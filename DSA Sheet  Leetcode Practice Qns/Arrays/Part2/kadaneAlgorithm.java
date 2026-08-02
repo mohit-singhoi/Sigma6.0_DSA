@@ -32,5 +32,17 @@ public class kadaneAlgorithm {
        }
        return maxSum;  // Return the maximum subarray sum found
    }
+
+      public static void main(String[] args) {
+       // Test case: Define an array of integers
+       int[] nums = {-2, 1, -3, 4, -1, 2, 1, -5, 4};
+      
+       // Call the maxSubArray function and store the result
+       int result = maxSubArray(nums);
+      
+       // Output the result
+       System.out.println("The maximum subarray sum is: " + result); 
+      // Expected output: 6
+   }
     
 }
