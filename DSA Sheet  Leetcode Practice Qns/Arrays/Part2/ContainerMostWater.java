@@ -15,6 +15,7 @@
 // Output: 1
 
 public class ContainerMostWater {
+    //O(n) time complexity and O(1) space complexity
     public static  int maxArea(int[] height) {
         int n = height.length;
         int maxWater = 0;
