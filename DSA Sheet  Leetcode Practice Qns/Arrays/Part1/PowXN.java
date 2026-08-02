@@ -15,9 +15,20 @@
 // Explanation: 2-2 = 1/22 = 1/4 = 0.25
 
 public class PowXN {
-    public static void main(String[] args) {
-        
-    }
+
+// Function to calculate x raised to the power of n
+   public static double myPow(double x, int n) {
+       return Math.pow(x, n);  // Use the built-in Math.pow function
+   }
+
+
+   // Main function to test the myPow function
+   public static void main(String[] args) {
+      // Solution solution = new Solution();  // Create an instance of Solution
+       double x = 2.0;  // Base value
+       int n = 10;  // Exponent value
+       System.out.println("Result: " + myPow(x, n));  // Print the result
+   }
     
     
 }
