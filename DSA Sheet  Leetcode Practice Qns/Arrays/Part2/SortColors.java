@@ -23,6 +23,7 @@ public class SortColors {
    }
 
 
+   //O(n) time complexity and O(1) space complexity
    public static void sortColors(int[] nums) {
        // Dutch National Flag algorithm
        int low = 0, mid = 0, high = nums.length - 1;
