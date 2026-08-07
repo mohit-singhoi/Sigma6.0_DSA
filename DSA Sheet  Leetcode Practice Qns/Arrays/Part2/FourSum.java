@@ -21,7 +21,7 @@ import java.util.Arrays;
 import java.util.List;
 
 public class FourSum {
-     public List<List<Integer>> fourSum(int[] nums, int target) {
+     public static  List<List<Integer>> fourSum(int[] nums, int target) {
         int n = nums.length;
         Arrays.sort(nums);
         List<List<Integer>> result = new ArrayList<>();
@@ -61,6 +61,21 @@ public class FourSum {
         }
         return result;
         
+    }
+
+    public static void main(String[] args) {
+        
+        int[] nums = {1, 0, -1, 0, -2, 2};
+       int target = 0;
+
+
+       List<List<Integer>> result = fourSum(nums, target);
+
+
+       System.out.println("Quadruplets summing to " + target + ":");
+       for (List<Integer> quad : result) {
+           System.out.println(quad);
+       }
     }
     
 }
