@@ -16,6 +16,51 @@
 // Input: nums = [2,2,2,2,2], target = 8
 // Output: [[2,2,2,2]]
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 public class FourSum {
+     public List<List<Integer>> fourSum(int[] nums, int target) {
+        int n = nums.length;
+        Arrays.sort(nums);
+        List<List<Integer>> result = new ArrayList<>();
+
+        // For loop for first number
+        for(int i =0;i<n-3;i++){
+            if(i>0 && nums[i] == nums[i-1])
+            continue;// skip duplicates
+            for(int j =i+1;j<n-2;j++){
+                if(j>i+1 && nums[j] == nums[j-1])
+                continue; //skip duplicates
+
+                long remainingTarget = (long)target - nums[i] - nums[j];
+                int left = j+1, right = n-1;
+
+                //Two pointer search for remaining 2 numbers
+                while(left<right){
+                    int sum = nums[left] + nums[right];
+
+                    if(sum <remainingTarget){
+                        left++;
+                    } else if (sum> remainingTarget){
+                        right--;
+                    } else{
+                        result.add(Arrays.asList(nums[i], nums[j], nums[left], nums[right]));
+
+                        //Skip duplicates
+                        int prevLeft = nums[left], prevRight = nums[right];
+                        while(left < right && nums[left] == prevLeft)
+                        left++;
+
+                        while(left < right && nums[right] == prevRight)
+                        right--;
+                    }
+                }
+            }
+        }
+        return result;
+        
+    }
     
 }
