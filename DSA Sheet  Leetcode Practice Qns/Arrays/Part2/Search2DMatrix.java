@@ -13,5 +13,25 @@
 // Output: false
 
 public class Search2DMatrix {
+
+    public boolean searchMatrix(int[][] matrix, int target) {
+        int m = matrix.size(), n =matrix[0].size();
+
+        int startRow = 0, endRow = m-1;
+        while(startRow <=endRow){
+            int midRow = StsrtRow +(endRow - startRow)/2;
+
+            if(target >= matrix[midRow][0] && target <= matrix[midRow][n-1]){
+                return searchInRow(matrix, target, midRow);
+            } else if(target >= matrix[midRow][n-1]){
+                // down => right
+                startRow = midRow+1;
+            } else{
+                //up => left
+                endRow = midRow-1;
+            }
+        }
+        return false;
+    }
     
 }
