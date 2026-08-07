@@ -21,6 +21,7 @@ import java.util.Arrays;
 import java.util.List;
 
 public class FourSum {
+    //Time Complexity: O(n^3), Space Complexity: O(1)
      public static  List<List<Integer>> fourSum(int[] nums, int target) {
         int n = nums.length;
         Arrays.sort(nums);
