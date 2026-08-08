@@ -70,7 +70,7 @@ JAVA DSA SIGMA 6.0
 
 ---
 
-## Data Structures
+# Data Structures
 
 - Arrays
 - ArrayLists
@@ -87,7 +87,7 @@ JAVA DSA SIGMA 6.0
 
 ---
 
-## Algorithms
+# Algorithms
 
 - Sorting Algorithms
 - Recursion
@@ -99,21 +99,53 @@ JAVA DSA SIGMA 6.0
 
 ---
 
-## Practice
+# Practice
+
+The repository also contains coding practice focused on improving problem-solving and interview preparation.
 
 - Interview Questions
 - Coding Problems
+- Topic-wise Problems
 - Optimized Solutions
-- Notes
+- Practice Questions
+- Revision Notes
 
 ---
 
-# 💻 Technologies Used
+# 🗺️ DSA Learning Roadmap
 
-- Java
-- VS Code
-- Git
-- GitHub
+Java Fundamentals
+       ↓
+Arrays & Strings
+       ↓
+ArrayList & Linked List
+       ↓
+Stacks & Queues
+       ↓
+Hashing & Heaps
+       ↓
+Recursion
+       ↓
+Backtracking
+       ↓
+Trees & BST
+       ↓
+Graphs
+       ↓
+Greedy Algorithms
+       ↓
+Dynamic Programming
+       ↓
+Advanced DSA & Interview Practice
+
+
+
+# 💻 Technologies & Tools Used
+
+- ☕ Java
+- 💻 VS Code
+- 🔧 Git
+- 🐙 GitHub
 
 ---
 
@@ -121,33 +153,20 @@ JAVA DSA SIGMA 6.0
 
 By completing this repository, I gained hands-on experience in:
 
+
 - Problem Solving
 - Java Programming
+- Data Structures
 - Algorithm Design
 - Time Complexity Analysis
-- Space Optimization
+- Space Complexity Analysis
+- Recursion & Backtracking
+- Tree & Graph Algorithms
 - Dynamic Programming
-- Graph Algorithms
-- Tree Algorithms
-- Interview Preparation
+- Interview Problem Solving
 
 ---
 
-# 🏆 Course Completion
-
-Successfully completed
-
-**Sigma 6.0 – Data Structures & Algorithms with Java**
-
-by **Apna College**
-
-📁 Certificate available in:
-
-```
-Z_Certificate/
-```
-
----
 
 # ⭐ Repository Highlights
 
@@ -167,11 +186,32 @@ Z_Certificate/
 
 ---
 
+# 🏆 Course Completion
+
+Successfully completed
+
+**Sigma 6.0 – Data Structures & Algorithms with Java**
+
+by **Apna College**
+
+📁 Certificate available in:
+
+```
+Z_Certificate/
+```
+
+---
+
 # 🤝 Contributions
 
-This repository is primarily for learning and interview preparation.
+This repository is primarily maintained for:
 
-Suggestions and improvements are always welcome.
+Learning
+DSA Practice
+Revision
+Interview Preparation
+
+Suggestions, corrections, and improvements are always welcome.
 
 ---
 
@@ -186,4 +226,10 @@ https://github.com/mohit-singhoi
 
 ---
 
-## ⭐ If you found this repository helpful, don't forget to Star it!
+## ⭐ Support 
+
+If you found this repository helpful, don't forget to Star it!
+
+## 🚀 Keep Learning • Keep Practicing • Keep Coding
+
+Happy Coding! ☕💻
