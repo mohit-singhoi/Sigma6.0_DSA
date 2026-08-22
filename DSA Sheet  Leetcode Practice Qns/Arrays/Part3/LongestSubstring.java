@@ -17,6 +17,7 @@
 
 import java.util.*;
 public class LongestSubstring {
+    // O(n) time complexity and O(min(n, a)) space complexity where a is the size of the character set
     public static int lengthOfLongestSubstring(String s) {
         int n = s.length();
         int maxLength = 0;
