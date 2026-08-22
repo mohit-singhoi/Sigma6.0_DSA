@@ -13,6 +13,7 @@
 import java.util.*;
 
 public class MergeOverInterval {
+    //O(nlogn) time complexity due to sorting and O(n) space complexity for the merged list
     public static int[][] merge(int[][] intervals) {
         if (intervals.length == 0) {
             return new int[0][];
