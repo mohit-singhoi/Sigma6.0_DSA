@@ -10,5 +10,21 @@
 // Output : true
 
 public class WordSerach {
+
+    public static void main(String[] args) {
+        char[][] board = {
+                {'A', 'B', 'C', 'E'},
+                {'S', 'F', 'C', 'S'},
+                {'A', 'D', 'E', 'E'}
+        };
+        String word = "ABCCED";
+        System.out.println(exist(board, word)); // Output: true
+
+        String word2 = "SEE";
+        System.out.println(exist(board, word2)); // Output: true
+
+        String word3 = "ABCB";
+        System.out.println(exist(board, word3)); // Output: false
+    }
     
 }
