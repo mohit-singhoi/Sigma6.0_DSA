@@ -17,6 +17,7 @@
 // Output: [[0,0,0,0],[0,4,5,0],[0,3,1,0]]
 
 public class MatrixZero {
+    // O(m*n) time complexity and O(1) space complexity
     public static void setZeros(int[][] matrix) {
         int n = matrix.length;
         int m = matrix[0].length;
