@@ -18,8 +18,6 @@
 
 public class MatrixZero {
     public static void setZeros(int[][] matrix) {
-
-    public static void main(String[] args) {
         int n = matrix.length;
         int m = matrix[0].length;
         boolean col = false;
