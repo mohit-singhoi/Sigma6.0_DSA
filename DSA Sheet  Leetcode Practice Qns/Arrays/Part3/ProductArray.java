@@ -13,6 +13,7 @@
 import java.util.Arrays;
 
 public class ProductArray {
+    // TC : O(n), SC : O(1)
    public static int[] productExceptSelf(int[] nums) {
         int n = nums.length;
       
