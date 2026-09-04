@@ -13,10 +13,10 @@
 // Output : true
 
 public class WordSerach {
-        private int[] r = { -1, 1, 0, 0 }; // Row movement directions
-        private int[] c = { 0, 0, -1, 1 }; // Column movement directions
+        private static  int[] r = { -1, 1, 0, 0 }; // Row movement directions
+        private static int[] c = { 0, 0, -1, 1 }; // Column movement directions
 
-        private boolean helper(int row, int col, char[][] board, int n, int m, int index, String word, int size) {
+        private static boolean helper(int row, int col, char[][] board, int n, int m, int index, String word, int size) {
             if (index == size)
                 return true;
 
@@ -62,13 +62,13 @@ public class WordSerach {
                 { 'A', 'D', 'E', 'E' }
         };
         String word = "ABCCED";
-        System.out.println(exist(board, word)); // Output: true
+        System.out.println("Word Exists : " + exist(board, word)); // Output: true
 
         String word2 = "SEE";
-        System.out.println(exist(board, word2)); // Output: true
+        System.out.println("Word Exists : " + exist(board, word2)); // Output: true
 
         String word3 = "ABCB";
-        System.out.println(exist(board, word3)); // Output: false
+        System.out.println("Word Exists : " + exist(board, word3)); // Output: false
     }
 
 }
